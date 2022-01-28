@@ -1,6 +1,4 @@
-dist/
 www/
-loader/
 
 *~
 *.sw[mnpcod]
@@ -18,10 +16,10 @@ log.txt
 .vscode/
 .sass-cache/
 .versions/
-node_modules/
 $RECYCLE.BIN/
 
 .DS_Store
 Thumbs.db
 UserInterfaceState.xcuserstate
 .env
+package-lock.json
