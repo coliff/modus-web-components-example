@@ -1,0 +1,23 @@
+{
+  "name": "modus-web-components-example",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/coliff/modus-web-components-example#readme",
+  "bugs": {
+    "url": "https://github.com/coliff/modus-web-components-example/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coliff/modus-web-components-example.git"
+  },
+  "license": "MIT",
+  "author": "",
+  "private": "true",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@trimble-oss/modus-web-components": "^0.0.19"
+  }
+}
