@@ -2,8 +2,7 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Modus Web Components</title>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -11,6 +10,9 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons&display=block" rel="stylesheet" />
   <meta name="robots" content="noindex">
   <meta name="referrer" content="never">
+  <script
+    src="https://cdn.jsdelivr.net/npm/@trimble-oss/modus-web-components@0.1.0/dist/modus-web-components/modus-web-components.esm.min.js"
+    type="module"></script>
 </head>
 
 <body>
@@ -22,10 +24,6 @@
   <modus-message type="info">Info message.</modus-message>
   <modus-message type="question">Question message?</modus-message>
 
-  <script type="module">
-    import { defineCustomElements } from "/node_modules/@trimble-oss/modus-web-components/loader";
-    defineCustomElements();
-  </script>
 </body>
 
 </html>
