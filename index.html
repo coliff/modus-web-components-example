@@ -8,55 +8,69 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=fallback" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons&display=block" rel="stylesheet" />
+  <link href="https://modus-mb2.netlify.app/docs/2.0/dist/css/modus-bootstrap-grid.min.css" rel="stylesheet" />
+  <link href="https://modus-mb2.netlify.app/docs/2.0/dist/css/modus-bootstrap-utilities.min.css" rel="stylesheet" />
   <script
-    src="https://cdn.jsdelivr.net/npm/@trimble-oss/modus-web-components@0.1.2/dist/modus-web-components/modus-web-components.esm.min.js"
+    src="https://cdn.jsdelivr.net/npm/@trimble-oss/modus-web-components@0.1.2/dist/modus-web-components/modus-web-components.esm.js"
     type="module"></script>
   <meta name="robots" content="noindex">
   <meta name="referrer" content="never">
+  <style>
+    body {
+      font-family: 'Open Sans';
+    }
+  </style>
+
 </head>
 
-<body>
+<body class="container col-sm-12 col-md-11 col-lg-10 col-xl-9">
 
-  <modus-alert message="You've installed Modus Web Components!" type="success" />
-  
-  <hr>
-  
+  <hr class="my-5 opacity-25">
+
   <h3>Badges</h3>
-  
+
   <modus-badge>Default</modus-badge>
   <modus-badge color="secondary">Secondary</modus-badge>
   <modus-badge color="tertiary">Tertiary</modus-badge>
   <modus-badge color="dark">Dark</modus-badge>
   <modus-badge color="warning">Warning</modus-badge>
   <modus-badge color="danger">Danger</modus-badge>
-  
-  <hr>
-  
+
+  <hr class="my-5 opacity-25">
+
   <h3>Messages</h3>
 
   <modus-message type="info">Info message.</modus-message>
   <modus-message type="question">Question message?</modus-message>
-  
-  <hr>
-  
+
+  <hr class="my-5 opacity-25">
+
   <h3>Progress Bar</h3>
-  
+
   <modus-progress-bar value="3" max-value="4" min-value="0" text="75%"></modus-progress-bar>
-  
-  <hr>
-  
+
+  <hr class="my-5 opacity-25">
+
   <h3>Spinners</h3>
-  
+
   <modus-spinner></modus-spinner>
-  
-  <hr>
-  
+
+  <hr class="my-5 opacity-25">
+
   <h3>Tooltip</h3>
-  
+
   <modus-tooltip text="Tooltip text..." position="right">
   <modus-button>Button</modus-button>
   </modus-tooltip>
-  
+
+  <hr class="my-5 opacity-25">
+
+  <h3>Alert</h3>
+
+  <modus-alert message="You've installed Modus Web Components!" type="success" />
+
+  <hr class="my-5 opacity-25">
+
 </body>
 
 </html>
