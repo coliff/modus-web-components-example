@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=fallback" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons&display=block" rel="stylesheet" />
   <script
-    src="https://cdn.jsdelivr.net/npm/@trimble-oss/modus-web-components/dist/modus-web-components/modus-web-components.esm.min.js"
+    src="https://cdn.jsdelivr.net/npm/@trimble-oss/modus-web-components@0.1.2/dist/modus-web-components/modus-web-components.esm.min.js"
     type="module"></script>
   <meta name="robots" content="noindex">
   <meta name="referrer" content="never">
@@ -39,9 +39,23 @@
   
   <hr>
   
+  <h3>Progress Bar</h3>
+  
+  <modus-progress-bar value="3" max-value="4" min-value="0" text="75%"></modus-progress-bar>
+  
+  <hr>
+  
   <h3>Spinners</h3>
   
   <modus-spinner></modus-spinner>
+  
+  <hr>
+  
+  <h3>Tooltip</h3>
+  
+  <modus-tooltip text="Tooltip text..." position="right">
+  <modus-button>Button</modus-button>
+  </modus-tooltip>
   
 </body>
 
