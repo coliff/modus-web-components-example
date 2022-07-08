@@ -13,6 +13,8 @@
   <script
     src="https://cdn.jsdelivr.net/npm/@trimble-oss/modus-web-components@0.1/dist/modus-web-components/modus-web-components.esm.js"
     type="module" fetchpriority="high"></script>
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2280%22>🧩</text></svg>">
   <meta name="robots" content="noindex">
   <meta name="referrer" content="never">
   <style>
@@ -1194,13 +1196,13 @@
         <div>
           <div class="bd-example-snippet bd-code-snippet">
             <div class="bd-example">
-              <ul class=list-group>
-                <li class="list-group-item disabled" aria-disabled=true>A disabled item</li>
-                <li class=list-group-item>A second item</li>
-                <li class=list-group-item>A third item</li>
-                <li class=list-group-item>A fourth item</li>
-                <li class=list-group-item>And a fifth one</li>
-              </ul>
+              <modus-list>
+                <modus-list-item disabled>A disabled item</modus-list-item>
+                <modus-list-item>A second item</modus-list-item>
+                <modus-list-item>A third item</modus-list-item>
+                <modus-list-item>A fourth item</modus-list-item>
+                <modus-list-item>And a fifth one</modus-list-item>
+              </modus-list>
             </div>
           </div>
           <div class="bd-example-snippet bd-code-snippet">
@@ -1293,7 +1295,7 @@
                 </div>
               </nav>
               <div class=tab-content id=nav-tabContent>
-                <div class="tab-pane fade show active" id=nav-home role=tabpanel aria-labelledby=nav-home-tab>
+                <div class="tab-pane fade show active" id=nav-home role="tabpanel" aria-labelledby=nav-home-tab>
                   <p>This is some placeholder content the <strong>Home tab's</strong> associated content. Clicking
                     another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes
                     to
@@ -1301,7 +1303,7 @@
                     <code>.nav</code>-powered navigation.
                   </p>
                 </div>
-                <div class="tab-pane fade" id=nav-profile role=tabpanel aria-labelledby=nav-profile-tab>
+                <div class="tab-pane fade" id=nav-profile role="tabpanel" aria-labelledby=nav-profile-tab>
                   <p>This is some placeholder content the <strong>Profile tab's</strong> associated content. Clicking
                     another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes
                     to
@@ -1309,7 +1311,7 @@
                     <code>.nav</code>-powered navigation.
                   </p>
                 </div>
-                <div class="tab-pane fade" id=nav-contact role=tabpanel aria-labelledby=nav-contact-tab>
+                <div class="tab-pane fade" id=nav-contact role="tabpanel" aria-labelledby=nav-contact-tab>
                   <p>This is some placeholder content the <strong>Contact tab's</strong> associated content. Clicking
                     another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes
                     to
