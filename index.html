@@ -24,97 +24,106 @@
 
 </head>
 
-<body class="container col-sm-12 col-md-11 col-lg-10 col-xl-9">
+<body class="bg-white mx-0">
+  <div class="container px-0">
+    <div class="row mx-auto">
+      <div class="col-11 col-sm-10 col-md-10 col-lg-9 col-xl-8 col-xxl-6 mx-auto">
 
-  <h3>Accordion</h3>
+        <h3>Accordion</h3>
 
-  <modus-accordion>
-    <modus-accordion-item header-text="Item 1">Content</modus-accordion-item>
-    <modus-accordion-item header-text="Item 2">Content</modus-accordion-item>
-    <modus-accordion-item disabled header-text="Item 3">Content</modus-accordion-item>
-  </modus-accordion>
+        <modus-accordion>
+          <modus-accordion-item header-text="Item 1">Content</modus-accordion-item>
+          <modus-accordion-item header-text="Item 2">Content</modus-accordion-item>
+          <modus-accordion-item disabled header-text="Item 3">Content</modus-accordion-item>
+        </modus-accordion>
 
-  <hr class="my-5 opacity-25">
+        <hr class="my-5 opacity-25">
 
-  <h3>Alert</h3>
+        <h3>Alert</h3>
 
-  <modus-alert message="You've installed Modus Web Components!" type="success" />
-  </modus-alert>
+        <modus-alert message="You've installed Modus Web Components!" type="success" />
+        </modus-alert>
 
-  <hr class="my-5 opacity-25">
+        <hr class="my-5 opacity-25">
 
-  <h3>Badges</h3>
+        <h3>Badges</h3>
 
-  <modus-badge>Default</modus-badge>
-  <modus-badge color="secondary">Secondary</modus-badge>
-  <modus-badge color="tertiary">Tertiary</modus-badge>
-  <modus-badge color="dark">Dark</modus-badge>
-  <modus-badge color="warning">Warning</modus-badge>
-  <modus-badge color="danger">Danger</modus-badge>
+        <modus-badge>Default</modus-badge>
+        <modus-badge color="secondary">Secondary</modus-badge>
+        <modus-badge color="tertiary">Tertiary</modus-badge>
+        <modus-badge color="dark">Dark</modus-badge>
+        <modus-badge color="warning">Warning</modus-badge>
+        <modus-badge color="danger">Danger</modus-badge>
 
-  <hr class="my-5 opacity-25">
+        <hr class="my-5 opacity-25">
 
-  <h3>Buttons</h3>
+        <h3>Buttons</h3>
 
-  <modus-button color="primary">Primary</modus-button>
-  <modus-button color="secondary">Secondary</modus-button>
-  <modus-button color="tertiary">Tertiary</modus-button>
+        <modus-button color="primary">Primary</modus-button>
+        <modus-button color="secondary">Secondary</modus-button>
+        <modus-button color="tertiary">Tertiary</modus-button>
 
-  <modus-button button-style="outline" color="primary">Outline</modus-button>
-  <modus-button button-style="outline" color="secondary">Outline</modus-button>
+        <modus-button button-style="outline" color="primary">Outline</modus-button>
+        <modus-button button-style="outline" color="secondary">Outline</modus-button>
 
-  <hr class="my-5 opacity-25">
+        <hr class="my-5 opacity-25">
 
-  <h3>Chips</h3>
+        <h3>Chips</h3>
 
-  <modus-chip image-url="https://randomuser.me/api/portraits/lego/1.jpg" show-close value="Bryan"></modus-chip>
-  <modus-chip has-error image-url="https://randomuser.me/api/portraits/lego/2.jpg" show-close value="Bryan"></modus-chip>
-  <modus-chip disabled image-url="https://randomuser.me/api/portraits/lego/3.jpg" show-close value="Bryan"></modus-chip>
+        <modus-chip image-url="https://randomuser.me/api/portraits/lego/1.jpg" show-close value="Bryan"></modus-chip>
+        <modus-chip has-error image-url="https://randomuser.me/api/portraits/lego/2.jpg" show-close value="Bryan">
+        </modus-chip>
+        <modus-chip disabled image-url="https://randomuser.me/api/portraits/lego/3.jpg" show-close value="Bryan">
+        </modus-chip>
 
-  <modus-chip image-url="https://randomuser.me/api/portraits/lego/4.jpg" show-close chip-style="outline" value="Bryan">
-  </modus-chip>
-  <modus-chip has-error image-url="https://randomuser.me/api/portraits/lego/5.jpg" show-close chip-style="outline"
-    value="Bryan">
-  </modus-chip>
-  <modus-chip disabled image-url="https://randomuser.me/api/portraits/lego/6.jpg" show-close chip-style="outline"
-    value="Bryan">
-  </modus-chip>
+        <modus-chip image-url="https://randomuser.me/api/portraits/lego/4.jpg" show-close chip-style="outline" value="Bryan">
+        </modus-chip>
+        <modus-chip has-error image-url="https://randomuser.me/api/portraits/lego/5.jpg" show-close chip-style="outline"
+          value="Bryan">
+        </modus-chip>
+        <modus-chip disabled image-url="https://randomuser.me/api/portraits/lego/6.jpg" show-close chip-style="outline"
+          value="Bryan">
+        </modus-chip>
 
-  <hr class="my-5 opacity-25">
+        <hr class="my-5 opacity-25">
 
-  <h3>Messages</h3>
+        <h3>Messages</h3>
 
-  <modus-message type="info">Info message.</modus-message>
-  <modus-message type="question">Question message?</modus-message>
+        <modus-message type="info">Info message.</modus-message>
+        <modus-message type="question">Question message?</modus-message>
 
-  <hr class="my-5 opacity-25">
+        <hr class="my-5 opacity-25">
 
-  <h3>Progress Bar</h3>
+        <h3>Progress Bar</h3>
 
-  <modus-progress-bar value="3" max-value="4" min-value="0" text="75%"></modus-progress-bar>
+        <modus-progress-bar value="3" max-value="4" min-value="0" text="75%"></modus-progress-bar>
 
-  <hr class="my-5 opacity-25">
+        <hr class="my-5 opacity-25">
 
-  <h3>Spinners</h3>
+        <h3>Spinners</h3>
 
-  <modus-spinner></modus-spinner>
+        <modus-spinner></modus-spinner>
 
-  <hr class="my-5 opacity-25">
+        <hr class="my-5 opacity-25">
 
-  <h3>Text Inputs</h3>
+        <h3>Text Inputs</h3>
 
-  <modus-text-input label="Text Input Demo 1" placeholder="Placeholder" include-search-icon required></modus-text-input>
+        <modus-text-input label="Text Input Demo 1" placeholder="Placeholder" include-search-icon required>
+        </modus-text-input>
 
-  <hr class="my-5 opacity-25">
+        <hr class="my-5 opacity-25">
 
-  <h3>Tooltip</h3>
+        <h3>Tooltip</h3>
 
-  <modus-tooltip text="Tooltip text..." position="right">
-    <modus-button>Button</modus-button>
-  </modus-tooltip>
+        <modus-tooltip text="Tooltip text..." position="right">
+          <modus-button>Button</modus-button>
+        </modus-tooltip>
 
-  <hr class="my-5 opacity-25">
+        <hr class="my-5 opacity-25">
 
+      </div>
+      </div>
+      </div>
 </body>
 
 </html>
