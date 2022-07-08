@@ -12,7 +12,7 @@
   <link href="https://modus-bootstrap.netlify.app/docs/5.2/dist/css/modus-bootstrap-grid.min.css" rel="stylesheet" />
   <link href="https://modus-bootstrap.netlify.app/docs/5.2/dist/css/modus-bootstrap-utilities.min.css" rel="stylesheet" />
   <script
-    src="https://cdn.jsdelivr.net/npm/@trimble-oss/modus-web-components@0.1.2/dist/modus-web-components/modus-web-components.esm.js"
+    src="https://cdn.jsdelivr.net/npm/@trimble-oss/modus-web-components@0.1/dist/modus-web-components/modus-web-components.esm.js"
     type="module"></script>
   <meta name="robots" content="noindex">
   <meta name="referrer" content="never">
@@ -26,6 +26,21 @@
 
 <body class="container col-sm-12 col-md-11 col-lg-10 col-xl-9">
 
+  <h3>Accordion</h3>
+
+  <modus-accordion>
+    <modus-accordion-item header-text="Item 1">Content</modus-accordion-item>
+    <modus-accordion-item header-text="Item 2">Content</modus-accordion-item>
+    <modus-accordion-item disabled header-text="Item 3">Content</modus-accordion-item>
+  </modus-accordion>
+
+  <hr class="my-5 opacity-25">
+
+  <h3>Alert</h3>
+
+  <modus-alert message="You've installed Modus Web Components!" type="success" />
+  </modus-alert>
+
   <hr class="my-5 opacity-25">
 
   <h3>Badges</h3>
@@ -36,6 +51,34 @@
   <modus-badge color="dark">Dark</modus-badge>
   <modus-badge color="warning">Warning</modus-badge>
   <modus-badge color="danger">Danger</modus-badge>
+
+  <hr class="my-5 opacity-25">
+
+  <h3>Buttons</h3>
+
+  <modus-button color="primary">Primary</modus-button>
+  <modus-button color="secondary">Secondary</modus-button>
+  <modus-button color="tertiary">Tertiary</modus-button>
+
+  <modus-button button-style="outline" color="primary">Outline</modus-button>
+  <modus-button button-style="outline" color="secondary">Outline</modus-button>
+
+  <hr class="my-5 opacity-25">
+
+  <h3>Chips</h3>
+
+  <modus-chip image-url="https://randomuser.me/api/portraits/lego/1.jpg" show-close value="Bryan"></modus-chip>
+  <modus-chip has-error image-url="https://randomuser.me/api/portraits/lego/2.jpg" show-close value="Bryan"></modus-chip>
+  <modus-chip disabled image-url="https://randomuser.me/api/portraits/lego/3.jpg" show-close value="Bryan"></modus-chip>
+
+  <modus-chip image-url="https://randomuser.me/api/portraits/lego/4.jpg" show-close chip-style="outline" value="Bryan">
+  </modus-chip>
+  <modus-chip has-error image-url="https://randomuser.me/api/portraits/lego/5.jpg" show-close chip-style="outline"
+    value="Bryan">
+  </modus-chip>
+  <modus-chip disabled image-url="https://randomuser.me/api/portraits/lego/6.jpg" show-close chip-style="outline"
+    value="Bryan">
+  </modus-chip>
 
   <hr class="my-5 opacity-25">
 
@@ -58,23 +101,17 @@
 
   <hr class="my-5 opacity-25">
 
-  <h3>Tooltip</h3>
-
-  <modus-tooltip text="Tooltip text..." position="right">
-  <modus-button>Button</modus-button>
-  </modus-tooltip>
-
-  <hr class="my-5 opacity-25">
-
-  <h3>Alert</h3>
-
-  <modus-alert message="You've installed Modus Web Components!" type="success" />
-
-  <hr class="my-5 opacity-25">
-
   <h3>Text Inputs</h3>
 
   <modus-text-input label="Text Input Demo 1" placeholder="Placeholder" include-search-icon required></modus-text-input>
+
+  <hr class="my-5 opacity-25">
+
+  <h3>Tooltip</h3>
+
+  <modus-tooltip text="Tooltip text..." position="right">
+    <modus-button>Button</modus-button>
+  </modus-tooltip>
 
   <hr class="my-5 opacity-25">
 

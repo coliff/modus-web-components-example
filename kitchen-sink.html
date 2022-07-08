@@ -8,11 +8,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=fallback" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons&display=block" rel="stylesheet" />
-  <link href="https://modus-bootstrap.netlify.app/docs/5.2/dist/css/modus-bootstrap.min.css" rel="stylesheet" />
+  <link href="https://modus-bootstrap.netlify.app/docs/5.2/dist/css/modus-bootstrap.css" rel="stylesheet" />
   <link href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/cheatsheet.css" rel="stylesheet">
   <script
-    src="https://cdn.jsdelivr.net/npm/@trimble-oss/modus-web-components@0.1.2/dist/modus-web-components/modus-web-components.esm.js"
-    type="module"></script>
+    src="https://cdn.jsdelivr.net/npm/@trimble-oss/modus-web-components@0.1/dist/modus-web-components/modus-web-components.esm.js"
+    type="module" fetchpriority="high"></script>
   <meta name="robots" content="noindex">
   <meta name="referrer" content="never">
   <style>
@@ -1483,20 +1483,20 @@
           </div>
           <div class="bd-example-snippet bd-code-snippet">
             <div class="bd-example">
-              <button type="button" class="btn btn-secondary" data-bs-container=body data-bs-toggle=popover
-                data-bs-placement=top data-bs-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+              <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle=popover data-bs-placement="top"
+                data-bs-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
                 Popover on top
               </button>
-              <button type="button" class="btn btn-secondary" data-bs-container=body data-bs-toggle=popover
-                data-bs-placement=right data-bs-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+              <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle=popover
+                data-bs-placement="right" data-bs-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
                 Popover on end
               </button>
-              <button type="button" class="btn btn-secondary" data-bs-container=body data-bs-toggle=popover
-                data-bs-placement=bottom data-bs-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+              <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle=popover
+                data-bs-placement="bottom" data-bs-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
                 Popover on bottom
               </button>
-              <button type="button" class="btn btn-secondary" data-bs-container=body data-bs-toggle=popover
-                data-bs-placement=left data-bs-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+              <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle=popover data-bs-placement="left"
+                data-bs-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
                 Popover on start
               </button>
             </div>
