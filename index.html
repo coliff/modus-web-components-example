@@ -97,7 +97,13 @@
 
         <hr class="my-5 opacity-25">
 
-        <h3>Chips</h3>
+        <h3 id="checkbox">Checkbox</h3>
+
+        <modus-checkbox label="Checkbox">Checkbox</modus-checkbox>
+
+        <hr class="my-5 opacity-25">
+
+        <h3 id="chips">Chips</h3>
 
         <modus-chip image-url="https://randomuser.me/api/portraits/lego/1.jpg" show-close value="Bryan"></modus-chip>
         <modus-chip has-error image-url="https://randomuser.me/api/portraits/lego/2.jpg" show-close value="Bryan">
@@ -116,7 +122,7 @@
 
         <hr class="my-5 opacity-25">
 
-        <h3>Dropdown</h3>
+        <h3 id="dropdown">Dropdown</h3>
 
         <modus-dropdown toggle-element-id="toggleElement">
           <modus-button id="toggleElement" slot="dropdownToggle">Dropdown</modus-button>
@@ -222,6 +228,16 @@
             },
           ];
         </script>
+
+        <hr class="my-5 opacity-25">
+
+        <h3 id="select">Select</h3>
+
+        <modus-select id="select-demo-1" label="Select Demo 1" options-display-prop="display"></modus-select>
+<script>
+  const modusSelect = document.querySelector("#select-demo-1");
+  modusSelect.options = [{ display: "Option 1" }, { display: "Option 2" }, { display: "Option 3" }];
+</script>
 
         <hr class="my-5 opacity-25">
         <h3 id="sliders">Slider</h3>
