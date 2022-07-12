@@ -57,24 +57,24 @@
         <modus-badge color="warning">Warning</modus-badge>
         <modus-badge color="danger">Danger</modus-badge>
 
-<hr class="my-5 opacity-25">
+        <hr class="my-5 opacity-25">
 
-<h3>Breadcrumb</h3>
+        <h3>Breadcrumb</h3>
 
-<modus-breadcrumb></modus-breadcrumb>
+        <modus-breadcrumb></modus-breadcrumb>
 
-<script>
-  const modusBreadcrumb = document.querySelector("modus-breadcrumb");
-  const crumbs = [
-    { id: "1", display: "Crumb 1" },
-    { id: "2", display: "Crumb 2" },
-    { id: "3", display: "Crumb 3" },
-    { id: "4", display: "Crumb 4" },
-  ];
-  modusBreadcrumb.crumbs = crumbs;
-</script>
+        <script>
+          const modusBreadcrumb = document.querySelector("modus-breadcrumb");
+          const crumbs = [
+            { id: "1", display: "Crumb 1" },
+            { id: "2", display: "Crumb 2" },
+            { id: "3", display: "Crumb 3" },
+            { id: "4", display: "Crumb 4" },
+          ];
+          modusBreadcrumb.crumbs = crumbs;
+        </script>
 
-<hr class="my-5 opacity-25">
+        <hr class="my-5 opacity-25">
 
         <h3 id="buttons">Buttons</h3>
 
@@ -99,7 +99,9 @@
 
         <h3 id="checkbox">Checkbox</h3>
 
-        <modus-checkbox label="Checkbox">Checkbox</modus-checkbox>
+        <modus-checkbox class="mb-2" label="Checkbox"></modus-checkbox>
+        <modus-checkbox class="mb-2" disabled label="Disabled Checkbox"></modus-checkbox>
+        <modus-checkbox class="mb-2" indeterminate label="Indeterminate Checkbox"></modus-checkbox>
 
         <hr class="my-5 opacity-25">
 
@@ -242,25 +244,27 @@
         <hr class="my-5 opacity-25">
         <h3 id="sliders">Slider</h3>
 
-        <modus-slider label="Slider"></modus-slider>
+        <modus-slider label="Slider"></modus-slider><br>
+        <modus-slider disabled label="Slider"></modus-slider>
 
         <hr class="my-5 opacity-25">
 
         <h3 id="spinners">Spinners</h3>
 
-        <modus-spinner></modus-spinner>
+        <modus-spinner class="me-3"></modus-spinner>
+        <modus-spinner color="#6a6e79" class="me-3"></modus-spinner>
 
-<hr class="my-5 opacity-25">
+        <hr class="my-5 opacity-25">
 
-<h3 id="switch">Switch</h3>
+        <h3 id="switch">Switch</h3>
 
-<modus-switch label="Default"></modus-switch>
-<modus-switch checked label="Checked"></modus-switch>
-<modus-switch disabled label="Disabled"></modus-switch>
+        <modus-switch label="Default"></modus-switch>
+        <modus-switch checked label="Checked"></modus-switch>
+        <modus-switch disabled label="Disabled"></modus-switch>
 
-<hr class="my-5 opacity-25">
+        <hr class="my-5 opacity-25">
 
-<h3 id="tabs">Tabs</h3>
+        <h3 id="tabs">Tabs</h3>
 
         <modus-tabs></modus-tabs>
 
@@ -290,7 +294,14 @@
 
         <h3 id="toast">Toast</h3>
 
-        <modus-toast type="default">Default</modus-toast>
+        <modus-toast class="my-2" type="default">Default</modus-toast>
+        <modus-toast class="my-2" type="danger">Danger</modus-toast>
+        <modus-toast class="my-2" type="dark">Dark</modus-toast>
+        <modus-toast class="my-2" type="primary">Primary</modus-toast>
+        <modus-toast class="my-2" type="secondary">Secondary</modus-toast>
+        <modus-toast class="my-2" type="success">Success</modus-toast>
+        <modus-toast class="my-2" type="tertiary">Tertiary</modus-toast>
+        <modus-toast class="my-2" type="warning">Warning</modus-toast>
 
         <hr class="my-5 opacity-25">
 
@@ -303,8 +314,8 @@
         <hr class="my-5 opacity-25">
 
       </div>
-      </div>
-      </div>
+    </div>
+    </div>
 </body>
 
 </html>
