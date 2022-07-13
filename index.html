@@ -129,7 +129,9 @@
         <modus-dropdown toggle-element-id="toggleElement">
           <modus-button id="toggleElement" slot="dropdownToggle">Dropdown</modus-button>
           <modus-list slot="dropdownList">
-            <modus-list-item size="condensed">Item 1</modus-list-item>
+            <modus-list-item>Item 1</modus-list-item>
+            <modus-list-item>Item 2</modus-list-item>
+            <modus-list-item>Item 3</modus-list-item>
           </modus-list>
         </modus-dropdown>
 
@@ -287,7 +289,10 @@
 
         <h3>Text Inputs</h3>
 
-        <modus-text-input label="Text Input Demo 1" placeholder="Placeholder" include-search-icon required>
+        <modus-text-input label="Search" placeholder="Search" inputmode="search" include-search-icon required>
+        </modus-text-input>
+
+        <modus-text-input label="Email" placeholder="user@example.com" inputmode="email" required>
         </modus-text-input>
 
         <hr class="my-5 opacity-25">
