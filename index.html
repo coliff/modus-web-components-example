@@ -9,8 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=fallback" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons&display=block" rel="stylesheet" />
-  <link href="https://modus-bootstrap.netlify.app/docs/5.2/dist/css/modus-bootstrap-grid.min.css" rel="stylesheet" />
-  <link href="https://modus-bootstrap.netlify.app/docs/5.2/dist/css/modus-bootstrap-utilities.min.css" rel="stylesheet" />
+  <link href="https://modus-bootstrap.netlify.app/docs/5.2/dist/css/modus-bootstrap.css" rel="stylesheet" />
   <script
     src="https://cdn.jsdelivr.net/npm/@trimble-oss/modus-web-components@0.1/dist/modus-web-components/modus-web-components.esm.js"
     type="module"></script>
@@ -31,7 +30,7 @@
     <div class="row mx-auto">
       <div class="col-11 col-sm-10 col-md-10 col-lg-9 col-xl-8 col-xxl-6 mx-auto">
 
-        <h3>Accordion</h3>
+        <h3 id="accordion">Accordion</h3>
 
         <modus-accordion>
           <modus-accordion-item header-text="Item 1">Content</modus-accordion-item>
@@ -41,19 +40,20 @@
 
         <hr class="my-5 opacity-25">
 
-        <h3>Alert</h3>
+        <h3 id="alerts">Alert</h3>
 
         <modus-alert message="You've installed Modus Web Components!" type="success" />
         </modus-alert>
 
         <hr class="my-5 opacity-25">
 
-        <h3>Badges</h3>
+        <h3 id="badges">Badges</h3>
 
         <modus-badge>Default</modus-badge>
         <modus-badge color="secondary">Secondary</modus-badge>
         <modus-badge color="tertiary">Tertiary</modus-badge>
         <modus-badge color="dark">Dark</modus-badge>
+        <modus-badge color="success">Success</modus-badge>
         <modus-badge color="warning">Warning</modus-badge>
         <modus-badge color="danger">Danger</modus-badge>
 
@@ -162,10 +162,24 @@
 
         <hr class="my-5 opacity-25">
 
-        <h3>Messages</h3>
+        <h3 id="messages">Messages</h3>
 
         <modus-message type="info">Info message.</modus-message>
         <modus-message type="question">Question message?</modus-message>
+
+        <hr class="my-5 opacity-25">
+        <h3 id="modal">Modal</h3>
+
+        <modus-button color="primary">Open modal</modus-button>
+        <modus-modal header-text="Modal title" primary-button-text="Save changes" secondary-button-text="Close">
+          <p>Modal body text goes here.</p>
+        </modus-modal>
+
+        <script>
+          document.querySelector("modus-button").addEventListener("buttonClick", () => {
+            document.querySelector("modus-modal").open();
+          });
+        </script>
 
         <hr class="my-5 opacity-25">
 
@@ -287,7 +301,7 @@
 
         <hr class="my-5 opacity-25">
 
-        <h3>Text Inputs</h3>
+        <h3 id="text-inputs">Text Inputs</h3>
 
         <modus-text-input label="Search" placeholder="Search" inputmode="search" include-search-icon required>
         </modus-text-input>
