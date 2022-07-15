@@ -59,7 +59,7 @@
 
         <hr class="my-5 opacity-25">
 
-        <h3>Breadcrumb</h3>
+        <h3 id="breadcrumb">Breadcrumb</h3>
 
         <modus-breadcrumb></modus-breadcrumb>
 
@@ -170,13 +170,13 @@
         <hr class="my-5 opacity-25">
         <h3 id="modal">Modal</h3>
 
-        <modus-button color="primary">Open modal</modus-button>
+        <modus-button id="btn-modal" color="primary">Open modal</modus-button>
         <modus-modal header-text="Modal title" primary-button-text="Save changes" secondary-button-text="Close">
           <p>Modal body text goes here.</p>
         </modus-modal>
 
         <script>
-          document.querySelector("modus-button").addEventListener("buttonClick", () => {
+            document.querySelector("#btn-modal").addEventListener("buttonClick", () => {
             document.querySelector("modus-modal").open();
           });
         </script>

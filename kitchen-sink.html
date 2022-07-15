@@ -1258,9 +1258,12 @@
           <div class="bd-example-snippet bd-code-snippet">
             <div class="bd-example">
               <div class="d-flex justify-content-between flex-wrap">
-                <button type="button" class="btn btn-primary" data-bs-toggle=modal data-bs-target=#exampleModalDefault>
-                  Launch demo modal
-                </button>
+                <modus-button color="primary">Launch demo modal</modus-button>
+                <script>
+                  document.querySelector("#btn-modal").addEventListener("buttonClick", () => {
+                    document.querySelector("modus-modal").open();
+                  });
+                </script>
                 <button type="button" class="btn btn-primary" data-bs-toggle=modal data-bs-target=#staticBackdropLive>
                   Launch static backdrop modal
                 </button>
@@ -1670,23 +1673,9 @@
       </article>
     </section>
   </div>
-  <div class="modal fade" id=exampleModalDefault tabindex=-1 aria-labelledby=exampleModalLabel aria-hidden=true>
-    <div class=modal-dialog>
-      <div class=modal-content>
-        <div class=modal-header>
-          <h5 class=modal-title id=exampleModalLabel>Modal title</h5><button type="button" class=btn-close
-            data-bs-dismiss=modal aria-label=Close></button>
-        </div>
-        <div class=modal-body>
-          ...
-        </div>
-        <div class=modal-footer>
-          <button type="button" class="btn btn-secondary" data-bs-dismiss=modal>Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
-      </div>
-    </div>
-  </div>
+  <modus-modal header-text="Modal title" primary-button-text="Save changes" secondary-button-text="Close">
+    <p></p>
+  </modus-modal>
   <div class="modal fade" id=staticBackdropLive data-bs-backdrop=static data-bs-keyboard=false tabindex=-1
     aria-labelledby=staticBackdropLiveLabel aria-hidden=true>
     <div class=modal-dialog>
