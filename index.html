@@ -8,11 +8,10 @@
   <meta name="description" content="Modus Web Components examples">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=fallback" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons&display=block" rel="stylesheet" />
   <link href="https://modus-bootstrap.netlify.app/docs/5.2/dist/css/modus-bootstrap.css" rel="stylesheet" />
   <script
     src="https://cdn.jsdelivr.net/npm/@trimble-oss/modus-web-components@0.1/dist/modus-web-components/modus-web-components.esm.js"
-    type="module"></script>
+    type="module" fetchpriority="high"></script>
   <meta name="robots" content="noindex">
   <meta name="referrer" content="never">
   <link rel="icon"
@@ -21,6 +20,12 @@
     body {
       font-family: 'Open Sans';
     }
+
+    main {
+      max-width: 990px;
+      margin-left: auto;
+      margin-right: auto;
+    }
   </style>
 
 </head>
@@ -28,7 +33,7 @@
 <body class="bg-white mx-0">
   <div class="container px-0">
     <div class="row mx-auto">
-      <div class="col-11 col-sm-10 col-md-10 col-lg-9 col-xl-8 col-xxl-6 mx-auto">
+      <main class="col-11 col-sm-10 col-md-10 col-lg-9 col-xl-8 col-xxl-6 mx-auto">
 
         <h3 id="accordion">Accordion</h3>
 
@@ -135,7 +140,8 @@
         <modus-chip disabled image-url="https://randomuser.me/api/portraits/lego/3.jpg" show-close value="Bryan">
         </modus-chip>
 
-        <modus-chip image-url="https://randomuser.me/api/portraits/lego/4.jpg" show-close chip-style="outline" value="Bryan">
+        <modus-chip image-url="https://randomuser.me/api/portraits/lego/4.jpg" show-close chip-style="outline"
+          value="Bryan">
         </modus-chip>
         <modus-chip has-error image-url="https://randomuser.me/api/portraits/lego/5.jpg" show-close chip-style="outline"
           value="Bryan">
@@ -148,13 +154,15 @@
 
         <modus-chip image-url="https://randomuser.me/api/portraits/lego/7.jpg" show-close size="small" value="Bryan">
         </modus-chip>
-        <modus-chip has-error image-url="https://randomuser.me/api/portraits/lego/8.jpg" show-close size="small" value="Bryan">
+        <modus-chip has-error image-url="https://randomuser.me/api/portraits/lego/8.jpg" show-close size="small"
+          value="Bryan">
         </modus-chip>
-        <modus-chip disabled image-url="https://randomuser.me/api/portraits/lego/9.jpg" show-close size="small" value="Bryan">
+        <modus-chip disabled image-url="https://randomuser.me/api/portraits/lego/9.jpg" show-close size="small"
+          value="Bryan">
         </modus-chip>
 
-        <modus-chip image-url="https://randomuser.me/api/portraits/lego/10.jpg" show-close size="small" chip-style="outline"
-          value="Bryan">
+        <modus-chip image-url="https://randomuser.me/api/portraits/lego/10.jpg" show-close size="small"
+          chip-style="outline" value="Bryan">
         </modus-chip>
         <modus-chip has-error image-url="https://randomuser.me/api/portraits/lego/1.jpg" show-close size="small"
           chip-style="outline" value="Bryan">
@@ -217,7 +225,7 @@
         </modus-modal>
 
         <script>
-            document.querySelector("#btn-modal").addEventListener("buttonClick", () => {
+          document.querySelector("#btn-modal").addEventListener("buttonClick", () => {
             document.querySelector("modus-modal").open();
           });
         </script>
@@ -241,7 +249,7 @@
               url: "",
             },
           ];
-            element.productLogoOptions = { height: 24, url: "https://modus.trimble.com/img/trimble-logo.svg" };
+          element.productLogoOptions = { height: 24, url: "https://modus.trimble.com/img/trimble-logo.svg" };
           element.profileMenuOptions = {
             avatarUrl: "https://s.gravatar.com/avatar/4c6fd750f096ce28fb32d8eb5e21cfb4?s=80",
             email: "hello@example.com",
@@ -266,7 +274,7 @@
           element.apps = [
             {
               description: "The one Design System",
-              logoUrl: "https://modus.trimble.com/favicon.svg",
+              logoUrl: "https://modus.trimble.com/icon.svg",
               name: "Modus Design System",
               url: "",
             },
@@ -274,7 +282,7 @@
           element.productLogoOptions = { height: 24, url: "https://modus.trimble.com/img/trimble-logo.svg" };
           element.profileMenuOptions = {
             avatarUrl: "https://s.gravatar.com/avatar/4c6fd750f096ce28fb32d8eb5e21cfb4?s=80",
-            email: "hello@example.com",
+            email: "christian@example.com",
             initials: "CO",
             username: "Christian Oliff",
           };
@@ -292,6 +300,10 @@
         <h3 id="progress-bar">Progress Bar</h3>
 
         <modus-progress-bar value="3" max-value="4" min-value="0" text="75%"></modus-progress-bar>
+        <br>
+        <modus-progress-bar size="small" value="3" max-value="4" min-value="0" text="75%"></modus-progress-bar>
+        <br>
+        <modus-progress-bar size="compact" value="3" max-value="4" min-value="0" text="75%"></modus-progress-bar>
 
         <hr class="my-5 opacity-25">
 
@@ -323,10 +335,10 @@
         <h3 id="select">Select</h3>
 
         <modus-select id="select-demo-1" label="Select Demo 1" options-display-prop="display"></modus-select>
-<script>
-  const modusSelect = document.querySelector("#select-demo-1");
-  modusSelect.options = [{ display: "Option 1" }, { display: "Option 2" }, { display: "Option 3" }];
-</script>
+        <script>
+          const modusSelect = document.querySelector("#select-demo-1");
+          modusSelect.options = [{ display: "Option 1" }, { display: "Option 2" }, { display: "Option 3" }];
+        </script>
 
         <hr class="my-5 opacity-25">
         <h3 id="sliders">Slider</h3>
@@ -402,7 +414,7 @@
 
         <hr class="my-5 opacity-25">
 
-      </div>
+      </main>
     </div>
   </div>
 </body>

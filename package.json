@@ -1,7 +1,8 @@
 {
   "name": "modus-web-components-example",
   "version": "1.0.0",
-  "description": "",
+  "private": "true",
+  "description": "modus web components examples",
   "homepage": "https://github.com/coliff/modus-web-components-example#readme",
   "bugs": {
     "url": "https://github.com/coliff/modus-web-components-example/issues"
@@ -12,11 +13,14 @@
   },
   "license": "MIT",
   "author": "C.Oliff",
-  "private": "true",
   "scripts": {
+    "prettier": "npx prettier --write \"**/*.*s\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "@trimble-oss/modus-web-components": "^0.1.39"
+    "@trimble-oss/modus-web-components": "^0.1.42"
+  },
+  "engines": {
+    "node": ">=16"
   }
 }

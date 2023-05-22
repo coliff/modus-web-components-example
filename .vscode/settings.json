@@ -1,5 +1,5 @@
 {
   "html.customData": [
-    "./node_modules//@trimble-oss/modus-web-components/dist/vscode.html-custom-data.json"
+    "./node_modules/@trimble-oss/modus-web-components/dist/vscode.html-custom-data.json"
   ]
 }
