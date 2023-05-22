@@ -26,6 +26,11 @@
       margin-left: auto;
       margin-right: auto;
     }
+
+    hr {
+      margin-top: 28px;
+      opacity: 0.25;
+    }
   </style>
 
 </head>
@@ -56,6 +61,10 @@
 
         <br>
 
+        <modus-alert message="Error alert" type="error"></modus-alert>
+
+        <br>
+
         <modus-alert message="I'm sorry Dave, I'm afraid I can't do that" type="warning" />
         </modus-alert>
 
@@ -74,6 +83,21 @@
         <modus-badge color="success">Success</modus-badge>
         <modus-badge color="warning">Warning</modus-badge>
         <modus-badge color="danger">Danger</modus-badge>
+
+        <br><br>
+
+        <modus-badge type="counter">1</modus-badge>
+        <modus-badge color="secondary" type="counter">2</modus-badge>
+        <modus-badge color="tertiary" type="counter">3</modus-badge>
+        <modus-badge color="dark" type="counter">4</modus-badge>
+        <modus-badge color="warning" type="counter">5</modus-badge>
+        <modus-badge color="danger" type="counter">6</modus-badge>
+
+        <br><br>
+
+        <modus-badge size="small" type="counter">Small</modus-badge>
+        <modus-badge size="medium" type="counter">Medium</modus-badge>
+        <modus-badge size="large" type="counter">Large</modus-badge>
 
         <hr class="my-5 opacity-25">
 
@@ -173,6 +197,30 @@
 
         <hr class="my-5 opacity-25">
 
+        <h3 id="content-tree">Content Tree</h3>
+
+        <modus-tree-view style="width:400px;" checkbox-selection="false" checked-items="false" expanded-items="false"
+          multi-checkbox-selection="false" multi-selection="false" selected-items="false" size="" class="hydrated">
+          <modus-tree-view-item node-id="1" label="Inbox" class="hydrated">
+            <modus-tree-view-item node-id="2" label="Personal" class="hydrated"></modus-tree-view-item>
+            <modus-tree-view-item node-id="3" label="Work" class="hydrated"></modus-tree-view-item>
+            <modus-tree-view-item node-id="4" label="Social" class="hydrated"></modus-tree-view-item>
+            <modus-tree-view-item node-id="5" label="More ..." class="hydrated"></modus-tree-view-item>
+          </modus-tree-view-item>
+          <modus-tree-view-item node-id="6" label="Archived" class="hydrated">
+            <modus-tree-view-item node-id="7" label="Folder1" class="hydrated">
+              <modus-tree-view-item node-id="8" label="File1" class="hydrated"></modus-tree-view-item>
+              <modus-tree-view-item node-id="9" label="Folder2" class="hydrated">
+                <modus-tree-view-item node-id="10" label="File2" class="hydrated"></modus-tree-view-item>
+              </modus-tree-view-item>
+              <modus-tree-view-item node-id="11" label="File3" class="hydrated"></modus-tree-view-item>
+            </modus-tree-view-item>
+          </modus-tree-view-item>
+          <modus-tree-view-item node-id="12" label="Spam" class="hydrated"></modus-tree-view-item>
+        </modus-tree-view>
+
+        <hr class="my-5 opacity-25">
+
         <h3 id="dropdown">Dropdown</h3>
 
         <modus-dropdown toggle-element-id="toggleElement">
@@ -214,6 +262,9 @@
         <h3 id="messages">Messages</h3>
 
         <modus-message type="info">Info message.</modus-message>
+
+        <br>
+
         <modus-message type="question">Question message?</modus-message>
 
         <hr class="my-5 opacity-25">
@@ -352,6 +403,7 @@
 
         <modus-spinner class="me-3"></modus-spinner>
         <modus-spinner color="#6a6e79" class="me-3"></modus-spinner>
+        <modus-spinner color="tertiary"></modus-spinner>
 
         <hr class="my-5 opacity-25">
 
