@@ -137,6 +137,30 @@
         <modus-button button-style="outline" color="primary" size="small">Outline</modus-button>
         <modus-button button-style="outline" color="secondary" size="small">Outline</modus-button>
 
+
+        <br><br>
+
+        <!-- Icon with Text Buttons -->
+        <modus-button size="small" left-icon="notifications">Primary</modus-button>
+        <modus-button color="secondary" right-icon="notifications">Secondary</modus-button>
+        <modus-button size="large" left-icon="notifications" color="tertiary"
+          right-icon="notifications">Tertiary</modus-button>
+        <modus-button size="large" left-icon="add" color="danger" right-icon="remove">Danger</modus-button>
+
+        <!-- Icon only Buttons - Default(Fill) -->
+        <modus-button size="small" color="primary" icon-only="notifications"></modus-button>
+        <modus-button color="secondary" icon-only="notifications"></modus-button>
+        <modus-button size="large" color="tertiary" icon-only="notifications"></modus-button>
+
+        <!-- Icon only Buttons - Outline -->
+        <modus-button button-style="outline" color="primary" icon-only="notifications"></modus-button>
+        <modus-button button-style="outline" color="secondary" icon-only="notifications"></modus-button>
+
+        <!-- Icon only Buttons - Borderless -->
+        <modus-button button-style="borderless" color="primary" icon-only="notifications"></modus-button>
+        <modus-button button-style="borderless" color="secondary" icon-only="notifications"></modus-button>
+        <modus-button button-style="borderless" color="tertiary" icon-only="notifications"></modus-button>
+
         <hr class="my-5 opacity-25">
 
         <h3 id="cards">Cards</h3>
@@ -144,6 +168,16 @@
         <modus-card>
           <div>
             <img src="https://modus.trimble.com/icon.png" alt="icon" />
+          </div>
+        </modus-card>
+
+        <modus-card aria-label="Card" height="270px" width="250px" border-radius="1px" show-card-border="true"
+          show-shadow-on-hover="true">
+          <div style="padding:10px">
+            <h4 id="card-title">Card title</h4>
+            <h5 id="card-subtitle">Card subtitle</h5>
+            <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <modus-button color="primary">Go somewhere</modus-button>
           </div>
         </modus-card>
 
@@ -225,7 +259,7 @@
         <h3 id="dropdown">Dropdown</h3>
 
         <modus-dropdown toggle-element-id="toggleElement">
-          <modus-button id="toggleElement" slot="dropdownToggle">Dropdown</modus-button>
+          <modus-button id="toggleElement" slot="dropdownToggle" show-caret="true">Dropdown</modus-button>
           <modus-list slot="dropdownList">
             <modus-list-item>Item 1</modus-list-item>
             <modus-list-item>Item 2</modus-list-item>
@@ -247,6 +281,15 @@
             console.log(error);
           });
         </script>
+
+        <hr class="my-5 opacity-25">
+
+        <h3 id="icons">Icons</h3>
+
+        <modus-icon name="sun" color="black" size="50"></modus-icon>
+        <modus-icon name="sun" color="black" size="40"></modus-icon>
+        <modus-icon name="sun" color="black" size="25"></modus-icon>
+        <modus-icon name="sun" color="black" size="15"></modus-icon>
 
         <hr class="my-5 opacity-25">
 
