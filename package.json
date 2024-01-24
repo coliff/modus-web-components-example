@@ -17,9 +17,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "@trimble-oss/modus-web-components": "0.3.0"
+    "@trimble-oss/modus-web-components": "0.14.0"
   },
   "engines": {
-    "node": ">=16"
+    "node": ">=18"
   }
 }
