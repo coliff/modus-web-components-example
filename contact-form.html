@@ -1,60 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Modus Web Components</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=fallback"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons&display=block"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/@trimble-oss/modus-bootstrap/dist/css/modus-bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@trimble-oss/modus-web-components@0.1/dist/modus-web-components/modus-web-components.esm.js"
+      type="module"
+      fetchpriority="high"
+    ></script>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2280%22>🧩</text></svg>"
+    />
+    <meta name="robots" content="noindex" />
+    <meta name="referrer" content="never" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      async
+    ></script>
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Modus Web Components</title>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=fallback" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons&display=block" rel="stylesheet" />
-  <link href="https://cdn.jsdelivr.net/npm/@trimble-oss/modus-bootstrap/dist/css/modus-bootstrap.min.css" rel="stylesheet" />
-  <link rel="preconnect" href="https://cdn.jsdelivr.net">
-  <script
-    src="https://cdn.jsdelivr.net/npm/@trimble-oss/modus-web-components@0.1/dist/modus-web-components/modus-web-components.esm.js"
-    type="module" fetchpriority="high"></script>
-  <link rel="icon"
-    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2280%22>🧩</text></svg>">
-  <meta name="robots" content="noindex">
-  <meta name="referrer" content="never">
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" async>
-  </script>
-</head>
-
-<body class="bg-light mt-5">
-  <div class="container">
-    <div class="col-11 col-sm-8 col-md-6 col-lg-5 col-xl-4 col-xxl-3 mx-auto">
-      <div class="form card border-light">
-        <div class="card-header">
-          Contact Form
-        </div>
-        <div class="card-body">
-          <modus-text-input label="Name" type="text" autocomplete="name" required>
-          </modus-text-input>
-          <br><br>
-          <modus-text-input label="Phone" type="tel" autocomplete="tel" required>
-          </modus-text-input>
-          <br><br>
-          <modus-text-input label="Email" type="email" autocomplete="email" required>
-          </modus-text-input>
-          <br><br>
-          <modus-text-input label="Address" type="text" autocomplete="address-line1" required>
-          </modus-text-input>
-          <br><br>
-          <modus-text-input label="City" type="text" autocomplete="address-line2" required>
-          </modus-text-input>
-          <br><br>
-          <modus-text-input label="State" type="text" autocomplete="address-line3" required>
-          </modus-text-input>
-          <br><br>
-          <modus-text-input label="Country" type="text" autocomplete="country-name" required>
-          </modus-text-input>
-          <br><br>
-          <modus-button color="primary">Primary</modus-button>
+  <body class="bg-light mt-5">
+    <div class="container">
+      <div class="col-11 col-sm-8 col-md-6 col-lg-5 col-xl-4 col-xxl-3 mx-auto">
+        <div class="form card border-light">
+          <div class="card-header">Contact Form</div>
+          <div class="card-body">
+            <form name="contact-form" id="contact">
+              <modus-text-input
+                label="Name"
+                type="text"
+                autocomplete="name"
+                required
+              >
+              </modus-text-input>
+              <br /><br />
+              <modus-text-input
+                label="Phone"
+                type="tel"
+                autocomplete="tel"
+                required
+              >
+              </modus-text-input>
+              <br /><br />
+              <modus-text-input
+                label="Email"
+                type="email"
+                autocomplete="email"
+                required
+              >
+              </modus-text-input>
+              <br /><br />
+              <modus-text-input
+                label="Address"
+                type="text"
+                autocomplete="address-line1"
+                required
+              >
+              </modus-text-input>
+              <br /><br />
+              <modus-text-input
+                label="City"
+                type="text"
+                autocomplete="address-line2"
+                required
+              >
+              </modus-text-input>
+              <br /><br />
+              <modus-text-input
+                label="State"
+                type="text"
+                autocomplete="address-line3"
+                required
+              >
+              </modus-text-input>
+              <br /><br />
+              <modus-text-input
+                label="Country"
+                type="text"
+                autocomplete="country-name"
+                required
+              >
+              </modus-text-input>
+              <br /><br />
+              <modus-button color="primary">Primary</modus-button>
+            </form>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</body>
-
+  </body>
 </html>
