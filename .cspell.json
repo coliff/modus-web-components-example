@@ -1,0 +1,16 @@
+{
+  "version": "0.2",
+  "words": [
+    "coliff",
+    "Oliff",
+    "Trimble"
+  ],
+  "language": "en,en-US",
+  "allowCompoundWords": true,
+  "ignorePaths": [
+    ".cspell.json",
+    "**/node_modules/**",
+    "*.min.*"
+  ],
+  "useGitignore": true
+}

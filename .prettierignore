@@ -1,7 +1,6 @@
 *.min.*
 
 *.css
-*.html
 *.js
 
 dist/*
