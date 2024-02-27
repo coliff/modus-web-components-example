@@ -71,6 +71,12 @@
 
           <hr class="my-5 opacity-25" />
 
+          <h3 id="autocomplete">Autocomplete</h3>
+
+          <modus-autocomplete id="default" label="Default Autocomplete" placeholder="Search..." clearable></modus-autocomplete>
+
+          <hr class="my-5 opacity-25" />
+
           <h3 id="badges">Badges</h3>
 
           <modus-badge>Default</modus-badge>
@@ -475,13 +481,13 @@
             ];
             element.logoOptions = {
               primary: {
-                url: 'https://modus-bootstrap.trimble.com/img/trimble-logo-rev.svg',
+                url: 'https://modus-bootstrap.trimble.com/img/trimble-logo.svg',
                 height: 24,
               },
               secondary: { url: 'https://modus.trimble.com/favicon.svg', height: 24 },
             };
             element.profileMenuOptions = {
-              avatarUrl: "https://s.gravatar.com/avatar/4c6fd750f096ce28fb32d8eb5e21cfb4?s=80",
+              avatarUrl: "https://randomuser.me/api/portraits/lego/5.jpg",
               email: "hello@example.com",
               initials: "CO",
               username: "Christian Oliff",
@@ -509,9 +515,12 @@
                 url: "",
               },
             ];
-            element.productLogoOptions = {
-              height: 24,
-              url: "https://modus.trimble.com/img/trimble-logo.svg",
+            element.logoOptions = {
+              primary: {
+                url: 'https://modus-bootstrap.trimble.com/img/trimble-logo.svg',
+                height: 24,
+              },
+              secondary: { url: 'https://modus.trimble.com/favicon.svg', height: 24 },
             };
             element.profileMenuOptions = {
               avatarUrl: "https://s.gravatar.com/avatar/4c6fd750f096ce28fb32d8eb5e21cfb4?s=80",
