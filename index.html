@@ -447,6 +447,7 @@
           <h3 id="navbar">Navbar</h3>
 
           <modus-navbar
+            id="nav-1"
             show-apps-menu
             show-help-menu
             show-main-menu
@@ -469,12 +470,15 @@
                 description: "The one Design System",
                 logoUrl: "https://modus.trimble.com/favicon.svg",
                 name: "Modus Design System",
-                url: "",
+                url: "https://coliff.github.io/modus-web-components-example/",
               },
             ];
-            element.productLogoOptions = {
-              height: 24,
-              url: "https://modus.trimble.com/img/trimble-logo.svg",
+            element.logoOptions = {
+              primary: {
+                url: 'https://modus-bootstrap.trimble.com/img/trimble-logo-rev.svg',
+                height: 24,
+              },
+              secondary: { url: 'https://modus.trimble.com/favicon.svg', height: 24 },
             };
             element.profileMenuOptions = {
               avatarUrl: "https://s.gravatar.com/avatar/4c6fd750f096ce28fb32d8eb5e21cfb4?s=80",
