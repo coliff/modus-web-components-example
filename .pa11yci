@@ -1,0 +1,8 @@
+{
+  "defaults": {
+    "hideElements": ".pa11y-ignore"
+  },
+  "urls": [
+    "index.html"
+  ]
+}

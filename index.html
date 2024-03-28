@@ -6,6 +6,7 @@
     <title>Modus Web Components</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=fallback" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/@trimble-oss/modus-web-components/dist/modus-web-components/modus-web-components.css" />
     <!-- <link href="" rel="stylesheet" /> -->
     <script
       src="https://cdn.jsdelivr.net/npm/@trimble-oss/modus-web-components@0/dist/modus-web-components/modus-web-components.esm.js"
@@ -483,8 +484,8 @@
             enable-search-overlay
             aria-label="Main nav"
             >
-            <div slot="main">Render your own main menu.</div>
-            <div slot="notifications">Render your own notifications.</div>
+            <div slot="main" class="pa11y-ignore">Render your own main menu.</div>
+            <div slot="notifications" class="pa11y-ignore">Render your own notifications.</div>
           </modus-navbar>
 
           <br />
