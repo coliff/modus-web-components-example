@@ -3,6 +3,9 @@
     "hideElements": ".pa11y-ignore"
   },
   "urls": [
-    "index.html"
+    {
+      "url": "https://coliff.github.io/modus-web-components-example/",
+      "timeout": 9900
+    }
   ]
 }
