@@ -6,7 +6,8 @@
     <title>Modus Web Components</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=fallback" rel="stylesheet" />
-    <link href="https://cdn.jsdelivr.net/npm/@trimble-oss/modus-web-components/dist/modus-web-components/modus-web-components.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/@trimble-oss/modus-web-components/dist/modus-web-components/modus-web-components.css" />
     <!-- <link href="" rel="stylesheet" /> -->
     <script
       src="https://cdn.jsdelivr.net/npm/@trimble-oss/modus-web-components@0/dist/modus-web-components/modus-web-components.esm.js"
@@ -48,20 +49,20 @@
             <modus-accordion-item disabled header-text="Item 3">Content</modus-accordion-item>
           </modus-accordion>
 
-          <br><br>
+          <br /><br />
 
           <modus-accordion>
             <modus-accordion-item header-text="Item 1" expand-button-type="circleArrow" icon="notifications">
               Content
             </modus-accordion-item>
           </modus-accordion>
-          <br>
+          <br />
           <modus-accordion>
             <modus-accordion-item header-text="Item 2" expand-button-type="circleArrow" icon="notifications">
               Content
             </modus-accordion-item>
           </modus-accordion>
-          <br>
+          <br />
           <modus-accordion>
             <modus-accordion-item expanded header-text="Item 3" expand-button-type="circleArrow" icon="notifications">
               Content
@@ -94,7 +95,11 @@
 
           <h3 id="autocomplete">Autocomplete</h3>
 
-          <modus-autocomplete id="default" label="Default Autocomplete" placeholder="Search..." clearable></modus-autocomplete>
+          <modus-autocomplete
+            id="default"
+            label="Default Autocomplete"
+            placeholder="Search..."
+            clearable></modus-autocomplete>
 
           <hr class="my-5 opacity-25" />
 
@@ -119,9 +124,9 @@
 
           <br /><br />
 
-          <modus-badge size="small" type="counter">Small</modus-badge>
-          <modus-badge size="medium" type="counter">Medium</modus-badge>
-          <modus-badge size="large" type="counter">Large</modus-badge>
+          <modus-badge size="small">Small</modus-badge>
+          <modus-badge size="medium">Medium</modus-badge>
+          <modus-badge size="large">Large</modus-badge>
 
           <hr class="my-5 opacity-25" />
 
@@ -140,6 +145,19 @@
             modusBreadcrumb.crumbs = crumbs;
           </script>
 
+          <modus-breadcrumb aria-label="breadcrumb" underline-links="true"></modus-breadcrumb>
+
+          <script>
+            const modusBreadcrumbUnderline = document.querySelector("modus-breadcrumb[underline-links='true']");
+            const crumbsUnderline = [
+              { id: "1", display: "Crumb 1" },
+              { id: "2", display: "Crumb 2" },
+              { id: "3", display: "Crumb 3" },
+              { id: "4", display: "Crumb 4" },
+            ];
+            modusBreadcrumbUnderline.crumbs = crumbsUnderline;
+          </script>
+
           <hr class="my-5 opacity-25" />
 
           <h3 id="buttons">Buttons</h3>
@@ -152,6 +170,7 @@
           <modus-button button-style="outline" color="primary">Outline</modus-button>
           <modus-button button-style="outline" color="secondary">Outline</modus-button>
 
+          <modus-button color="primary" disabled>Disabled</modus-button>
           <br /><br />
 
           <modus-button color="primary" size="small">Primary</modus-button>
@@ -219,7 +238,33 @@
 
           <h3 id="button-group">Button Group</h3>
 
+          <h4>Default</h4>
+
           <modus-button-group>
+            <modus-button>Button 1</modus-button>
+            <modus-button>Button 2</modus-button>
+            <modus-button>Button 3</modus-button>
+          </modus-button-group>
+
+          <h4>Single Selection</h4>
+
+          <modus-button-group selection-type="single">
+            <modus-button>Button 1</modus-button>
+            <modus-button>Button 2</modus-button>
+            <modus-button>Button 3</modus-button>
+          </modus-button-group>
+
+          <h4>Multiple Selection</h4>
+
+          <modus-button-group selection-type="multiple">
+            <modus-button>Button 1</modus-button>
+            <modus-button>Button 2</modus-button>
+            <modus-button>Button 3</modus-button>
+          </modus-button-group>
+
+          <h4>Disabled</h4>
+
+          <modus-button-group disabled>
             <modus-button>Button 1</modus-button>
             <modus-button>Button 2</modus-button>
             <modus-button>Button 3</modus-button>
@@ -256,8 +301,16 @@
           <h3 id="checkbox">Checkbox</h3>
 
           <modus-checkbox class="mb-2" label="Checkbox" aria-label="Checkbox"></modus-checkbox>
-          <modus-checkbox class="mb-2" disabled label="Disabled Checkbox" aria-label="Disabled Checkbox"></modus-checkbox>
-          <modus-checkbox class="mb-2" indeterminate label="Indeterminate Checkbox" aria-label="Indeterminate Checkbox"></modus-checkbox>
+          <modus-checkbox
+            class="mb-2"
+            disabled
+            label="Disabled Checkbox"
+            aria-label="Disabled Checkbox"></modus-checkbox>
+          <modus-checkbox
+            class="mb-2"
+            indeterminate
+            label="Indeterminate Checkbox"
+            aria-label="Indeterminate Checkbox"></modus-checkbox>
 
           <hr class="my-5 opacity-25" />
 
@@ -374,13 +427,13 @@
           <h3 id="datepicker">Datepicker</h3>
 
           <modus-date-input
-          helper-text="mmm dd, yyyy"
-          label="Single date"
-          allowed-chars-regex="[\d\/]"
-          format="mmm dd, yyyy"
-          value="2022-12-22"></modus-date-input>
+            helper-text="mmm dd, yyyy"
+            label="Single date"
+            allowed-chars-regex="[\d\/]"
+            format="mmm dd, yyyy"
+            value="2022-12-22"></modus-date-input>
 
-          <br>
+          <br />
 
           <modus-date-picker label="Select date range">
             <modus-date-input
@@ -407,7 +460,22 @@
           <h3 id="dropdown">Dropdown</h3>
 
           <modus-dropdown toggle-element-id="toggleElement" aria-label="Dropdown">
-            <modus-button id="toggleElement" slot="dropdownToggle" show-caret="true" aria-label="Dropdown">Dropdown</modus-button>
+            <modus-button id="toggleElement" slot="dropdownToggle" show-caret="true" aria-label="Dropdown"
+              >Dropdown</modus-button
+            >
+            <modus-list slot="dropdownList">
+              <modus-list-item>Item 1</modus-list-item>
+              <modus-list-item>Item 2</modus-list-item>
+              <modus-list-item>Item 3</modus-list-item>
+            </modus-list>
+          </modus-dropdown>
+
+          <br />
+
+          <modus-dropdown toggle-element-id="toggleElement2" aria-label="Dropdown" disabled>
+            <modus-button id="toggleElement2" slot="dropdownToggle" show-caret="true" aria-label="Dropdown"
+              >Disabled Dropdown</modus-button
+            >
             <modus-list slot="dropdownList">
               <modus-list-item>Item 1</modus-list-item>
               <modus-list-item>Item 2</modus-list-item>
@@ -492,8 +560,7 @@
             show-shadow
             show-search
             enable-search-overlay
-            aria-label="Main nav"
-            >
+            aria-label="Main nav">
             <div slot="main" class="pa11y-ignore">Render your own main menu.</div>
             <div slot="notifications" class="pa11y-ignore">Render your own notifications.</div>
           </modus-navbar>
@@ -512,10 +579,10 @@
             ];
             element.logoOptions = {
               primary: {
-                url: 'https://modus-bootstrap.trimble.com/img/trimble-logo.svg',
+                url: "https://modus-bootstrap.trimble.com/img/trimble-logo.svg",
                 height: 24,
               },
-              secondary: { url: 'https://modus.trimble.com/favicon.svg', height: 24 },
+              secondary: { url: "https://modus.trimble.com/favicon.svg", height: 24 },
             };
             element.profileMenuOptions = {
               avatarUrl: "https://randomuser.me/api/portraits/lego/5.jpg",
@@ -525,7 +592,13 @@
             };
           </script>
 
-          <modus-navbar show-shadow show-apps-menu show-help-menu show-main-menu show-notifications aria-label="Main nav 2">
+          <modus-navbar
+            show-shadow
+            show-apps-menu
+            show-help-menu
+            show-main-menu
+            show-notifications
+            aria-label="Main nav 2">
             <div slot="main">Render your own main menu.</div>
             <div slot="notifications">Render your own notifications.</div>
           </modus-navbar>
@@ -548,10 +621,10 @@
             ];
             element.logoOptions = {
               primary: {
-                url: 'https://modus-bootstrap.trimble.com/img/trimble-logo.svg',
+                url: "https://modus-bootstrap.trimble.com/img/trimble-logo.svg",
                 height: 24,
               },
-              secondary: { url: 'https://modus.trimble.com/favicon.svg', height: 24 },
+              secondary: { url: "https://modus.trimble.com/favicon.svg", height: 24 },
             };
             element.profileMenuOptions = {
               avatarUrl: "https://s.gravatar.com/avatar/4c6fd750f096ce28fb32d8eb5e21cfb4?s=80",
@@ -563,7 +636,14 @@
 
           <br />
 
-          <modus-navbar id="blue-theme" show-apps-menu show-help show-main-menu show-notifications variant="blue" aria-label="Main-nab-blue">
+          <modus-navbar
+            id="blue-theme"
+            show-apps-menu
+            show-help
+            show-main-menu
+            show-notifications
+            variant="blue"
+            aria-label="Main-nab-blue">
             <div slot="main" style="height: 300px">Render your own main menu.</div>
             <div slot="notifications">Render your own notifications.</div>
           </modus-navbar>
@@ -606,11 +686,28 @@
 
           <h3 id="progress-bar">Progress Bar</h3>
 
-          <modus-progress-bar aria-label="progress bar" value="3" max-value="4" min-value="0" text="75%"></modus-progress-bar>
+          <modus-progress-bar
+            aria-label="progress bar"
+            value="3"
+            max-value="4"
+            min-value="0"
+            text="75%"></modus-progress-bar>
           <br />
-          <modus-progress-bar aria-label="small progress bar" size="small" value="3" max-value="4" min-value="0" text="75%"></modus-progress-bar>
+          <modus-progress-bar
+            aria-label="small progress bar"
+            size="small"
+            value="3"
+            max-value="4"
+            min-value="0"
+            text="75%"></modus-progress-bar>
           <br />
-          <modus-progress-bar aria-label="compact progress bar" size="compact" value="3" max-value="4" min-value="0" text="75%"></modus-progress-bar>
+          <modus-progress-bar
+            aria-label="compact progress bar"
+            size="compact"
+            value="3"
+            max-value="4"
+            min-value="0"
+            text="75%"></modus-progress-bar>
 
           <hr class="my-5 opacity-25" />
 
@@ -641,7 +738,11 @@
 
           <h3 id="select">Select</h3>
 
-          <modus-select id="select-demo-1" label="Select Demo 1" aria-label="select 1" options-display-prop="display"></modus-select>
+          <modus-select
+            id="select-demo-1"
+            label="Select Demo 1"
+            aria-label="select 1"
+            options-display-prop="display"></modus-select>
           <script>
             const modusSelect = document.querySelector("#select-demo-1");
             modusSelect.options = [{ display: "Option 1" }, { display: "Option 2" }, { display: "Option 3" }];
@@ -701,81 +802,80 @@
           <div style="max-width: 950px">
             <modus-table hover="false" sort="false" />
           </div>
-        <script>
-          document.querySelector('modus-table').columns = [
-            {
-              header: 'First Name',
-              accessorKey: 'firstName',
-              id: 'first-name',
-              dataType: 'text',
-            },
-            {
-              header: 'Last Name',
-              accessorKey: 'lastName',
-              id: 'last-name',
-              dataType: 'text',
-            },
-            { header: 'Age', accessorKey: 'age', id: 'age', dataType: 'integer' },
-            {
-              header: 'Visits',
-              accessorKey: 'visits',
-              id: 'visits',
-              dataType: 'integer',
-            },
-            { header: 'Status', accessorKey: 'status', id: 'status', dataType: 'text' },
-            {
-              header: 'Profile Progress',
-              accessorKey: 'progress',
-              id: 'progress',
-              dataType: 'integer',
-            },
-            {
-              header: 'Created At',
-              accessorKey: 'createdAt',
-              id: 'createdAt',
-              dataType: 'date',
-            },
-          ];
-          document.querySelector('modus-table').data = [
-            {
-              firstName: 'Gordon',
-              lastName: 'Lemon',
-              age: 40,
-              visits: 434,
-              progress: 97,
-              status: 'single',
-              createdAt: '2002-11-21T12:48:51.739Z',
-            },
-            {
-              firstName: 'Elliott',
-              lastName: 'Boss',
-              age: 21,
-              visits: 348,
-              progress: 60,
-              status: 'complicated',
-              createdAt: '2012-02-08T12:14:22.776Z',
-            },
-            {
-              firstName: 'Agnes',
-              lastName: 'Breitenberg',
-              age: 34,
-              visits: 639,
-              progress: 84,
-              status: 'single',
-              createdAt: '1995-04-07T07:24:57.577Z',
-            },
-            {
-              firstName: 'Nicholas',
-              lastName: 'Sta',
-              age: 13,
-              visits: 518,
-              progress: 28,
-              status: 'relationship',
-              createdAt: '2009-07-28T14:29:51.505Z',
-            },
-          ];
-        </script>
-
+          <script>
+            document.querySelector("modus-table").columns = [
+              {
+                header: "First Name",
+                accessorKey: "firstName",
+                id: "first-name",
+                dataType: "text",
+              },
+              {
+                header: "Last Name",
+                accessorKey: "lastName",
+                id: "last-name",
+                dataType: "text",
+              },
+              { header: "Age", accessorKey: "age", id: "age", dataType: "integer" },
+              {
+                header: "Visits",
+                accessorKey: "visits",
+                id: "visits",
+                dataType: "integer",
+              },
+              { header: "Status", accessorKey: "status", id: "status", dataType: "text" },
+              {
+                header: "Profile Progress",
+                accessorKey: "progress",
+                id: "progress",
+                dataType: "integer",
+              },
+              {
+                header: "Created At",
+                accessorKey: "createdAt",
+                id: "createdAt",
+                dataType: "date",
+              },
+            ];
+            document.querySelector("modus-table").data = [
+              {
+                firstName: "Gordon",
+                lastName: "Lemon",
+                age: 40,
+                visits: 434,
+                progress: 97,
+                status: "single",
+                createdAt: "2002-11-21T12:48:51.739Z",
+              },
+              {
+                firstName: "Elliott",
+                lastName: "Boss",
+                age: 21,
+                visits: 348,
+                progress: 60,
+                status: "complicated",
+                createdAt: "2012-02-08T12:14:22.776Z",
+              },
+              {
+                firstName: "Agnes",
+                lastName: "Breitenberg",
+                age: 34,
+                visits: 639,
+                progress: 84,
+                status: "single",
+                createdAt: "1995-04-07T07:24:57.577Z",
+              },
+              {
+                firstName: "Nicholas",
+                lastName: "Sta",
+                age: 13,
+                visits: 518,
+                progress: 28,
+                status: "relationship",
+                createdAt: "2009-07-28T14:29:51.505Z",
+              },
+            ];
+          </script>
 
           <hr class="my-5 opacity-25" />
 
@@ -817,21 +917,24 @@
 
           <h3 id="time-picker">Time Picker</h3>
 
-          <modus-time-picker
-          label="Time"
-          placeholder="23:39"
-          helper-text="hh:mm"></modus-time-picker>
+          <modus-time-picker label="Time" placeholder="23:39" helper-text="hh:mm"></modus-time-picker>
 
           <hr class="my-5 opacity-25" />
 
           <h3 id="toast">Toast</h3>
 
-          <modus-toast class="my-2" type="default">Default</modus-toast>
-          <modus-toast class="my-2" type="danger">Danger</modus-toast>
+          <modus-toast class="my-2" type="default" dismissible="true">Default</modus-toast>
+          <br>
+          <modus-toast class="my-2" type="danger" role="alert">Danger (with role="alert")</modus-toast>
+          <br>
           <modus-toast class="my-2" type="dark">Dark</modus-toast>
+          <br>
           <modus-toast class="my-2" type="primary">Primary</modus-toast>
+          <br>
           <modus-toast class="my-2" type="secondary">Secondary</modus-toast>
+          <br>
           <modus-toast class="my-2" type="success">Success</modus-toast>
+          <br>
           <modus-toast class="my-2" type="warning">Warning</modus-toast>
 
           <hr class="my-5 opacity-25" />
