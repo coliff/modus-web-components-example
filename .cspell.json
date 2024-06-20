@@ -2,11 +2,13 @@
   "version": "0.2",
   "words": [
     "coliff",
+    "Dropup",
+    "navs",
     "Oliff",
     "Trimble",
     "undock"
   ],
-  "language": "en,en-US",
+  "language": "en,en-US,lorem",
   "allowCompoundWords": true,
   "ignorePaths": [
     ".cspell.json",

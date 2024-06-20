@@ -13,13 +13,15 @@
   },
   "license": "MIT",
   "scripts": {
+    "htmlhint": "npx htmlhint **/*.html",
     "prettier": "npx prettier --write \"**/*.*s\"",
     "pa11y": "npx pa11y https://coliff.github.io/modus-web-components-example/ --hide-elements \".pa11y-ignore\"",
     "pa11y-ci": "npx pa11y-ci",
+    "spellcheck": "npx cspell \"**/*.*\" --no-progress",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "@trimble-oss/modus-web-components": "0.14.0"
+    "@trimble-oss/modus-web-components": "0.31.1"
   },
   "engines": {
     "node": ">=18"
