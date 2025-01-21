@@ -20,9 +20,12 @@
     "spellcheck": "npx cspell \"**/*.*\" --no-progress"
   },
   "dependencies": {
-    "@trimble-oss/modus-web-components": "0.33.1"
+    "@trimble-oss/modus-web-components": "1.2.0"
   },
   "engines": {
     "node": ">=18"
+  },
+  "volta": {
+    "node": "18.20.0"
   }
 }
