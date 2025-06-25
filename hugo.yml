@@ -1,0 +1,37 @@
+languageCode: "en-US"
+title: "Modus"
+baseURL: "https://modus-icons.trimble.com/"
+enableInlineShortcodes: true
+enableRobotsTXT: true
+metaDataFormat: "yaml"
+disableKinds: ["taxonomy", "term", "RSS"]
+
+publishDir: "_site"
+
+security:
+  enableInlineShortcodes: true
+  funcs:
+    getenv:
+      - ^HUGO_
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false
+
+params:
+  description: "Modus Compare"
+
+# https://gohugo.io/configuration/minify/
+minify:
+  minifyOutput: true
+  tdewolff:
+    html:
+      keepQuotes: true
+      keepWhitespace: true
+    js:
+      keepVarNames: true
+    xml:
+      keepWhitespace: true
