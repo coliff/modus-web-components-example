@@ -4,9 +4,9 @@ baseURL: "https://coliff.github.io/modus-compare/"
 enableInlineShortcodes: true
 enableRobotsTXT: true
 metaDataFormat: "yaml"
-disableKinds: ["taxonomy", "term", "RSS"]
+disableKinds: ["taxonomy", "term", "RSS", "sitemap"]
 
-publishDir: "_site"
+publishDir: "public"
 
 security:
   enableInlineShortcodes: true

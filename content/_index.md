@@ -1,5 +1,5 @@
 ---
-title: "Modus Themes"
+title: "Modus Compare"
 description: ""
 body_class: "p-3 m-3 gap-3"
 ---
