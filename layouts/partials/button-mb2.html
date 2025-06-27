@@ -1,5 +1,11 @@
 <div class="d-flex flex-row gap-3 my-5 py-5">
-  <button type="button" class="btn btn-primary" data-bs-toggle="popover" data-bs-custom-class="popover-css-inspector">
+  <button
+    type="button"
+    class="btn btn-{{- with .type -}}{{- . }}{{ end }}"
+    data-bs-toggle="popover"
+    data-bs-custom-class="popover-css-inspector"
+    data-bs-content="This is a popover"
+  >
     Primary
   </button>
 </div>

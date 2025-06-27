@@ -1,7 +1,7 @@
 ---
 title: "Modus Compare"
 description: ""
-body_class: "p-3 m-3 gap-3"
+body_class: "gap-3"
 ---
 
 - [Compare Modus Web Components v1/v2 - Classic Dark](classic-dark/)

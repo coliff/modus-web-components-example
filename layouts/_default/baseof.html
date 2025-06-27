@@ -52,6 +52,7 @@
     </style>
   </head>
   <body {{ with .Page.Params.body_class }} class="{{- . -}}" {{ end }}>
+    {{- partial "nav.html" . -}}
     {{- block "body" . -}} {{- block "main" . -}} {{- end -}} {{- end -}}
     <script src="/js/popover.js" defer fetchpriority="low"></script>
   </body>
