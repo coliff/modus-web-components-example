@@ -1,28 +1,7 @@
 {{- define "main" -}}
 
 <main class="mb-5 p-4 container-xxl">
-  <h2 id="alerts" class="h1 fw-bold">Alerts</h2>
-
-  <table class="w-100 table table-bordered mt-3">
-    <tr>
-      <td class="w-50">{{- partial "alert-info--mb" . -}}</td>
-      <td class="w-50">{{- partial "alert-info--wc2" . -}}</td>
-    </tr>
-    <tr>
-      <td class="w-50">{{- partial "alert-danger--mb" . -}}</td>
-      <td class="w-50">{{- partial "alert-danger--wc2" . -}}</td>
-    </tr>
-    <tr>
-      <td class="w-50">{{- partial "alert-success--mb" . -}}</td>
-      <td class="w-50">{{- partial "alert-success--wc2" . -}}</td>
-    </tr>
-    <tr>
-      <td class="w-50">{{- partial "alert-warning--mb" . -}}</td>
-      <td class="w-50">{{- partial "alert-warning--wc2" . -}}</td>
-    </tr>
-  </table>
-
-  <h2 id="buttons" class="h1 fw-bold">Buttons</h2>
+  <h2 id="buttons" class="h1 fw-bold mt-5">Buttons</h2>
 
   <table class="w-100 table table-bordered mt-3">
     <tr>
@@ -47,7 +26,7 @@
     </tr>
   </table>
 
-   <h2 id="buttons" class="h1 fw-bold">Buttons (Disabled)</h2>
+  <h2 id="buttons" class="h1 fw-bold mt-5">Buttons (Disabled)</h2>
 
   <table class="w-100 table table-bordered mt-3">
     <tr>
@@ -69,6 +48,31 @@
     <tr>
       <td class="w-50">{{- partial "button-mb2" (dict "context" . "type" "warning" "disabled" "disabled") -}}</td>
       <td class="w-50">{{- partial "button-wc2" (dict "context" . "type" "warning" "disabled" "disabled") -}}</td>
+    </tr>
+  </table>
+
+   <h2 id="buttons" class="h1 fw-bold mt-5">Buttons (Outline)</h2>
+
+  <table class="w-100 table table-bordered mt-3 d-none">
+    <tr>
+      <td class="w-50">{{- partial "button-mb2" (dict "context" . "type" "primary" "label" "Primary" "popover" "This is a popover") -}}</td>
+      <td class="w-50">{{- partial "button-wc2" (dict "context" . "type" "primary" "label" "Primary" "popover" "This is a popover") -}}</td>
+    </tr>
+     <tr>
+      <td class="w-50">{{- partial "button-mb2" (dict "context" . "type" "secondary" "label" "Secondary" "popover" "This is a popover") -}}</td>
+      <td class="w-50">{{- partial "button-wc2" (dict "context" . "type" "secondary" "label" "Secondary" "popover" "This is a popover") -}}</td>
+    </tr>
+    <tr>
+      <td class="w-50">{{- partial "button-mb2" (dict "context" . "type" "tertiary" "label" "Tertiary" "popover" "This is a popover") -}}</td>
+      <td class="w-50">{{- partial "button-wc2" (dict "context" . "type" "tertiary" "label" "Tertiary" "popover" "This is a popover") -}}</td>
+    </tr>
+     <tr>
+      <td class="w-50">{{- partial "button-mb2" (dict "context" . "type" "danger" "label" "Danger" "popover" "This is a popover") -}}</td>
+      <td class="w-50">{{- partial "button-wc2" (dict "context" . "type" "danger" "label" "Danger" "popover" "This is a popover") -}}</td>
+    </tr>
+    <tr>
+      <td class="w-50">{{- partial "button-mb2" (dict "context" . "type" "warning" "label" "Warning" "popover" "This is a popover") -}}</td>
+      <td class="w-50">{{- partial "button-wc2" (dict "context" . "type" "warning" "label" "Warning" "popover" "This is a popover") -}}</td>
     </tr>
   </table>
 </main>

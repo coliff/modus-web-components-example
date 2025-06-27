@@ -2,11 +2,18 @@
 title: "Modus Compare"
 description: ""
 body_class: "gap-3"
+data_bs_theme: "light"
 ---
 
-- [Compare Modus Web Components v1/v2 - Classic Dark](classic-dark/)
+- [Alerts - Classic Dark](alerts-classic-dark/)
 
-- [Compare Modus Web Components v1/v2 - Classic Light](classic-light/)
+- [Alerts - Classic Light](alerts-classic-light/)
+
+---
+
+- [Buttons - Classic Dark](buttons-classic-dark/)
+
+- [Buttons - Classic Light](buttons-classic-light/)
 
 ---
 

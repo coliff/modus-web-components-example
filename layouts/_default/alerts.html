@@ -1,0 +1,27 @@
+{{- define "main" -}}
+
+<main class="mb-5 p-4 container-xxl">
+  <h2 id="alerts" class="h1 fw-bold">Alerts</h2>
+
+  <table class="w-100 table table-bordered mt-3">
+    <tr>
+      <td class="w-50">{{- partial "alert-info--mb" . -}}</td>
+      <td class="w-50">{{- partial "alert-info--wc2" . -}}</td>
+    </tr>
+    <tr>
+      <td class="w-50">{{- partial "alert-danger--mb" . -}}</td>
+      <td class="w-50">{{- partial "alert-danger--wc2" . -}}</td>
+    </tr>
+    <tr>
+      <td class="w-50">{{- partial "alert-success--mb" . -}}</td>
+      <td class="w-50">{{- partial "alert-success--wc2" . -}}</td>
+    </tr>
+    <tr>
+      <td class="w-50">{{- partial "alert-warning--mb" . -}}</td>
+      <td class="w-50">{{- partial "alert-warning--wc2" . -}}</td>
+    </tr>
+  </table>
+
+</main>
+
+{{- end -}}
