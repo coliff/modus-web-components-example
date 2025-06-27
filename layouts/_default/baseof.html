@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html
+  lang="en"
+  {{ with .Page.Params.html_class }}
+  class="{{- . -}}"  {{ end }}
+  {{ with .Page.Params.data_theme }}
+  data-theme="{{- . -}}" {{ end }}
+  {{ with .Page.Params.data_mode }}
+  data-mode="{{- . -}}" {{- end }}
+  {{ with .Page.Params.data_bs_theme }}
+  data-bs-theme="{{- . -}}" {{ end }}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>
+      {{- .Page.Title | markdownify -}}
+    </title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@trimble-oss/modus-bootstrap@2.0.12/dist/css/modus-bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@trimble-oss/modus-icons@1.16.0/dist/modus-solid/fonts/modus-icons.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=fallback" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@trimble-oss/moduswebcomponents@0.0.0-alpha.32/esm/modus-wc.js"
+      type="module"
+      fetchpriority="high"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popover-css-inspector@1.0.0-beta16/js/popover-css-inspector.min.js"
+      defer></script>
+
+    <style>
+      table tr,
+      table td {
+        min-height: 90px;
+      }
+      body {
+        max-width: 2000px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      table {
+        min-height: 200px;
+      }
+    </style>
+  </head>
+  <body {{ with .Page.Params.body_class }} class="{{- . -}}" {{ end }}>
+    {{- block "body" . -}} {{- block "main" . -}} {{- end -}} {{- end -}}
+    <script src="/js/popover.js" defer fetchpriority="low"></script>
+  </body>
+</html>

@@ -12,11 +12,11 @@
       href="https://cdn.jsdelivr.net/npm/@trimble-oss/modus-bootstrap@2.0.10/dist/css/modus-bootstrap.min.css" />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@trimble-oss/modus-icons@1/dist/modus-solid/fonts/modus-icons.css" />
+      href="https://cdn.jsdelivr.net/npm/@trimble-oss/modus-icons@1.16.0/dist/modus-solid/fonts/modus-icons.css" />
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=fallback" rel="stylesheet" />
     <script
-      src="https://cdn.jsdelivr.net/npm/@trimble-oss/moduswebcomponents@0.0.0-alpha.13/dist/esm/modus-wc.js"
+      src="https://cdn.jsdelivr.net/npm/@trimble-oss/moduswebcomponents@0.0.0-alpha.12/dist/esm/modus-wc.js"
       type="module"
       fetchpriority="high"></script>
     <meta name="description" content="Modus Web Components examples" />
@@ -327,19 +327,21 @@
           <hr class="my-5 opacity-25" />
           <h3 id="modal">Modal</h3>
 
-          <modus-wc-button onclick="my_modal_1fiux.showModal()"> Open modal </modus-wc-button>
+          <modus-wc-button onclick="my_modal_1fix.showModal()"> Open modal </modus-wc-button>
           <modus-wc-modal
             aria-label="Example modal"
             custom-class=""
             fullscreen="false"
-            modal-id="my_modal_1fiux"
+            modal-id="my_modal_1fix"
             backdrop="default"
             position="center"
             show-close="true"
             show-fullscreen-toggle="false">
             <span slot="header">Modal Title</span>
-            <span slot="content"> This is sample modal content. </span>
-            <modus-wc-button slot="footer" onclick="my_modal_1fiux.close()"> Close </modus-wc-button>
+            <span slot="content">This is sample modal content.</span>
+            <modus-wc-button slot="footer" onclick="my_modal_1fix.close()">
+              Close
+            </modus-wc-button>
           </modus-wc-modal>
 
           <script>

@@ -21,7 +21,7 @@
     "start": "npx lite-server -c bs-config.json"
   },
   "dependencies": {
-    "@trimble-oss/modus-web-components": "1.2.0",
+    "@trimble-oss/modus-web-components": "1.8.0",
     "htmlhint": "1.6.3",
     "hugo-bin": "0.144.9",
     "popover-css-inspector": "1.0.0-beta16"

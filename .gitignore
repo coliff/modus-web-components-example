@@ -1,25 +1,18 @@
 node_modules/
 www/
+_site/
 
 *~
-*.sw[mnpcod]
 *.log
 *.lock
 *.tmp
 *.tmp.*
 log.txt
-*.sublime-project
-*.sublime-workspace
 
-.stencil/
-.idea/
-.vs/
 .sass-cache/
 .versions/
-$RECYCLE.BIN/
 
 .DS_Store
 Thumbs.db
-UserInterfaceState.xcuserstate
 .env
 package-lock.json
