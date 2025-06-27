@@ -1,6 +1,6 @@
 languageCode: "en-US"
 title: "Modus"
-baseURL: "https://coliff.github.io/modus-web-components-example/"
+baseURL: "https://coliff.github.io/modus-compare/"
 enableInlineShortcodes: true
 enableRobotsTXT: true
 metaDataFormat: "yaml"

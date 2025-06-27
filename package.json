@@ -1,11 +1,11 @@
 {
-  "name": "modus-web-components-example",
+  "name": "modus-compare",
   "version": "1.0.0",
   "private": "true",
   "description": "modus web components examples",
-  "homepage": "https://coliff.github.io/modus-web-components-example/",
+  "homepage": "https://coliff.github.io/modus-compare/",
   "bugs": {
-    "url": "https://github.com/coliff/modus-web-components-example/issues"
+    "url": "https://github.com/coliff/modus-compare/issues"
   },
   "repository": {
     "type": "git",
