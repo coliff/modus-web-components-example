@@ -1,6 +1,6 @@
 languageCode: "en-US"
 title: "Modus"
-baseURL: "https://modus-icons.trimble.com/"
+baseURL: "https://coliff.github.io/modus-web-components-example/"
 enableInlineShortcodes: true
 enableRobotsTXT: true
 metaDataFormat: "yaml"
