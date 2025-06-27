@@ -1,6 +1,6 @@
 {{- define "main" -}}
 
-<main class="mb-5 p-4">
+<main class="mb-5 p-4 container-xxl">
   <h2 id="alerts" class="h1 fw-bold">Alerts</h2>
 
   <table class="w-100 table table-bordered mt-3">
@@ -44,6 +44,31 @@
     <tr>
       <td class="w-50">{{- partial "button-mb2" (dict "context" . "type" "warning" "label" "Warning" "popover" "This is a popover") -}}</td>
       <td class="w-50">{{- partial "button-wc2" (dict "context" . "type" "warning" "label" "Warning" "popover" "This is a popover") -}}</td>
+    </tr>
+  </table>
+
+   <h2 id="buttons" class="h1 fw-bold">Buttons (Disabled)</h2>
+
+  <table class="w-100 table table-bordered mt-3">
+    <tr>
+      <td class="w-50">{{- partial "button-mb2" (dict "context" . "type" "primary" "disabled" "disabled") -}}</td>
+      <td class="w-50">{{- partial "button-wc2" (dict "context" . "type" "primary" "disabled" "disabled") -}}</td>
+    </tr>
+     <tr>
+      <td class="w-50">{{- partial "button-mb2" (dict "context" . "type" "secondary" "disabled" "disabled") -}}</td>
+      <td class="w-50">{{- partial "button-wc2" (dict "context" . "type" "secondary" "disabled" "disabled") -}}</td>
+    </tr>
+    <tr>
+      <td class="w-50">{{- partial "button-mb2" (dict "context" . "type" "tertiary" "disabled" "disabled") -}}</td>
+      <td class="w-50">{{- partial "button-wc2" (dict "context" . "type" "tertiary" "disabled" "disabled") -}}</td>
+    </tr>
+     <tr>
+      <td class="w-50">{{- partial "button-mb2" (dict "context" . "type" "danger" "disabled" "disabled") -}}</td>
+      <td class="w-50">{{- partial "button-wc2" (dict "context" . "type" "danger" "disabled" "disabled") -}}</td>
+    </tr>
+    <tr>
+      <td class="w-50">{{- partial "button-mb2" (dict "context" . "type" "warning" "disabled" "disabled") -}}</td>
+      <td class="w-50">{{- partial "button-wc2" (dict "context" . "type" "warning" "disabled" "disabled") -}}</td>
     </tr>
   </table>
 </main>

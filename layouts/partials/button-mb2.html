@@ -5,8 +5,9 @@
     data-bs-toggle="popover"
     data-bs-custom-class="popover-css-inspector"
     data-bs-content="This is a popover"
+    {{- with .disabled -}}disabled{{ end }}
   >
-    Primary
+    {{- with .type -}}{{- . | title }}{{ end }}
   </button>
 </div>
 

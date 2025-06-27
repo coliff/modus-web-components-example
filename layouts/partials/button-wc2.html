@@ -1,5 +1,5 @@
 <div class="d-flex flex-row gap-3 my-5 py-5">
   <modus-wc-button color="{{- with .type -}}{{- . }}{{ end }}" shape="rectangle" size="md" type="button" variant="filled">
-    {{- with .type -}}{{- . }}{{ end }}
+    {{- with .type -}}{{- . | title }}{{ end }}
   </modus-wc-button>
 </div>
