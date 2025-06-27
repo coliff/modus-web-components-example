@@ -13,16 +13,23 @@ jobs:
       group: ${{ github.workflow }}-${{ github.ref }}
     steps:
       - uses: actions/checkout@v4
-
-      - uses: actions/setup-node@v4
         with:
-          node-version: 22
+          submodules: true
+          fetch-depth: 0
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: "latest"
+          extended: true
 
       - name: Build
-        run: hugo --minify
+        run: hugo --minify --gc
+
+      - name: Check build output
+        run: |
+          ls -la public/
+          echo "Build completed successfully"
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
@@ -30,3 +37,4 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
+          force_orphan: true
