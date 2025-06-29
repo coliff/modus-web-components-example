@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-white light" data-theme="modus-classic-light" data-mode="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modus Web Components v2</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@trimble-oss/modus-bootstrap@2.0.10/dist/css/modus-bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@trimble-oss/modus-icons@1.16.0/dist/modus-solid/fonts/modus-icons.css" />
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=fallback" rel="stylesheet" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@trimble-oss/moduswebcomponents@0.0.0-alpha.12/dist/esm/modus-wc.js"
+      type="module"
+      fetchpriority="high"></script>
+    <meta name="description" content="Modus Web Components examples" />
+    <meta name="robots" content="noindex" />
+    <meta name="referrer" content="never" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2280%22>🧩</text></svg>" />
+    <style>
+      body {
+        font-family: "Open Sans", sans-serif;
+      }
+
+      main {
+        max-width: 798px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      hr {
+        margin-top: 28px;
+        opacity: 0.25;
+      }
+    </style>
+  </head>
+  <body class="bg-white mx-0 mt-3">
+    <div class="container px-0">
+      <div class="row mx-auto">
+        <main class="col-11 col-sm-10 col-lg-9 col-xl-8 col-xxl-6 mx-auto mb-5">
+          <h3 id="accordion">Accordion</h3>
+          <div style="padding: 20px">
+            <modus-wc-accordion>
+              <modus-wc-collapse>
+                <div slot="content">Collapse content</div>
+              </modus-wc-collapse>
+              <modus-wc-collapse>
+                <div slot="content">Collapse content</div>
+              </modus-wc-collapse>
+              <modus-wc-collapse>
+                <div slot="content">Collapse content</div>
+              </modus-wc-collapse>
+            </modus-wc-accordion>
+          </div>
+
+          <h3 id="alert" class="mt-5">Alert</h3>
+
+          <modus-wc-alert
+            alert-description="You have 3 new messages."
+            custom-class="mb-3"
+            delay="9999000"
+            alert-title="Info alert (default)"
+            dismissible="true"
+            variant="info">
+          </modus-wc-alert>
+
+          <modus-wc-alert
+            alert-description="Success! You've installed Modus Web Components"
+            custom-class="mb-3"
+            delay="9999000"
+            alert-title="Success alert"
+            dismissible="true"
+            variant="success">
+          </modus-wc-alert>
+
+          <modus-wc-alert
+            alert-description="Error! You've not installed Modus Web Components"
+            custom-class="mb-3"
+            delay="9999000"
+            alert-title="Error alert"
+            dismissible="true"
+            variant="error">
+          </modus-wc-alert>
+
+          <modus-wc-alert
+            alert-description="warning! Modus Web Components is malfunctioning"
+            delay="9999000"
+            alert-title="warning alert"
+            dismissible="true"
+            variant="warning">
+          </modus-wc-alert>
+
+          <hr class="my-5 opacity-25" />
+
+          <h3 id="badge" class="mt-5">Badge</h3>
+
+          <modus-wc-badge color="primary" size="md" variant="filled"> Default </modus-wc-badge>
+          <modus-wc-badge color="secondary" size="md" variant="filled"> Secondary </modus-wc-badge>
+          <modus-wc-badge color="tertiary" size="md" variant="filled"> Tertiary </modus-wc-badge>
+          <modus-wc-badge color="dark" size="md" variant="filled"> Dark </modus-wc-badge>
+          <modus-wc-badge color="success" size="md" variant="filled"> Success </modus-wc-badge>
+          <modus-wc-badge color="warning" size="md" variant="filled"> Warning </modus-wc-badge>
+          <modus-wc-badge color="danger" size="md" variant="filled"> Danger </modus-wc-badge>
+
+          <hr class="my-5 opacity-25" />
+
+          <h3 id="breadcrumb" class="mt-5">Breadcrumb</h3>
+
+          <modus-wc-breadcrumbs size="md"></modus-wc-breadcrumbs>
+
+          <script>
+            const modusBreadcrumb = document.querySelector("modus-wc-breadcrumb");
+            const crumbs = [
+              { id: "1", display: "Crumb 1" },
+              { id: "2", display: "Crumb 2" },
+              { id: "3", display: "Crumb 3" },
+              { id: "4", display: "Crumb 4" },
+            ];
+            modusBreadcrumb.crumbs = crumbs;
+          </script>
+
+          <modus-wc-breadcrumb underline-links="true"></modus-wc-breadcrumb>
+
+          <script>
+            const modusBreadcrumbUnderline = document.querySelector("modus-wc-breadcrumb[underline-links='true']");
+            const crumbsUnderline = [
+              { id: "1", display: "Crumb 1" },
+              { id: "2", display: "Crumb 2" },
+              { id: "3", display: "Crumb 3" },
+              { id: "4", display: "Crumb 4" },
+            ];
+            modusBreadcrumbUnderline.crumbs = crumbsUnderline;
+          </script>
+
+          <hr class="my-5 opacity-25" />
+
+          <h3 id="buttons">Buttons</h3>
+
+          <modus-wc-button color="primary">Primary</modus-wc-button>
+          <modus-wc-button color="secondary">Secondary</modus-wc-button>
+          <modus-wc-button color="tertiary">Tertiary</modus-wc-button>
+          <modus-wc-button color="danger">Danger</modus-wc-button>
+
+          <modus-wc-button button-style="outline" color="primary">Outline</modus-wc-button>
+          <modus-wc-button button-style="outline" color="secondary">Outline</modus-wc-button>
+
+          <modus-wc-button color="primary" disabled>Disabled</modus-wc-button>
+          <br /><br />
+
+          <modus-wc-button color="primary" size="small">Primary</modus-wc-button>
+          <modus-wc-button color="secondary" size="small">Secondary</modus-wc-button>
+          <modus-wc-button color="tertiary" size="small">Tertiary</modus-wc-button>
+
+          <modus-wc-button button-style="outline" color="primary" size="small">Outline</modus-wc-button>
+          <modus-wc-button button-style="outline" color="secondary" size="small">Outline</modus-wc-button>
+
+          <br /><br />
+
+          <!-- Icon with Text Buttons -->
+          <modus-wc-button size="small" left-icon="notifications">Primary</modus-wc-button>
+          <modus-wc-button color="secondary" right-icon="notifications">Secondary</modus-wc-button>
+          <modus-wc-button size="large" left-icon="notifications" color="tertiary" right-icon="notifications"
+            >Tertiary</modus-wc-button
+          >
+          <modus-wc-button size="large" left-icon="add" color="danger" right-icon="remove">Danger</modus-wc-button>
+
+          <br /><br />
+
+          <!-- Icon only Buttons - Default(Fill) -->
+          <modus-wc-button
+            size="small"
+            color="primary"
+            icon-only="notifications"
+            aria-label="Notification"></modus-wc-button>
+          <modus-wc-button color="secondary" icon-only="notifications" aria-label="Notification"></modus-wc-button>
+          <modus-wc-button
+            size="large"
+            color="tertiary"
+            icon-only="notifications"
+            aria-label="Notification"></modus-wc-button>
+
+          <br /><br />
+
+          <!-- Icon only Buttons - Outline -->
+          <modus-wc-button
+            button-style="outline"
+            color="primary"
+            icon-only="notifications"
+            aria-label="Notification"></modus-wc-button>
+          <modus-wc-button
+            button-style="outline"
+            color="secondary"
+            icon-only="notifications"
+            aria-label="Notification"></modus-wc-button>
+
+          <br /><br />
+
+          <!-- Icon only Buttons - Borderless -->
+          <modus-wc-button
+            button-style="borderless"
+            color="primary"
+            icon-only="notifications"
+            aria-label="Notification"></modus-wc-button>
+          <modus-wc-button
+            button-style="borderless"
+            color="secondary"
+            icon-only="notifications"
+            aria-label="Notification"></modus-wc-button>
+          <modus-wc-button
+            button-style="borderless"
+            color="tertiary"
+            icon-only="notifications"
+            aria-label="Notification"></modus-wc-button>
+
+          <hr class="my-5 opacity-25" />
+
+          <h3 id="cards">Cards</h3>
+
+          <modus-card>
+            <div>
+              <img src="https://modus.trimble.com/icon.png" alt="icon" />
+            </div>
+          </modus-card>
+
+          <br /><br />
+
+          <modus-card
+            aria-label="Card"
+            height="270px"
+            width="250px"
+            show-card-border="true"
+            show-shadow-on-hover="true">
+            <div style="padding: 10px">
+              <h4 id="card-title">Card title</h4>
+              <h5 id="card-subtitle">Card subtitle</h5>
+              <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <modus-wc-button color="primary">Go somewhere</modus-wc-button>
+            </div>
+          </modus-card>
+
+          <hr class="my-5 opacity-25" />
+
+          <h3 id="checkbox">Checkbox</h3>
+
+          <modus-wc-checkbox
+            aria-label="Checkbox"
+            class="mb-2"
+            custom-class=""
+            label="Label"
+            name=""
+            size="md"></modus-wc-checkbox>
+          <modus-wc-checkbox
+            class="mb-2"
+            disabled
+            label="Disabled Checkbox"
+            aria-label="Disabled Checkbox"></modus-wc-checkbox>
+          <modus-wc-checkbox
+            class="mb-2"
+            indeterminate
+            label="Indeterminate Checkbox"
+            aria-label="Indeterminate Checkbox"></modus-wc-checkbox>
+
+          <hr class="my-5 opacity-25" />
+
+          <h3 id="chips">Chips</h3>
+
+          <modus-wc-chip
+            aria-label="Chip example"
+            label="Chip"
+            show-remove="true"
+            size="md"
+            variant="filled"></modus-wc-chip>
+
+          <br /><br />
+
+          <modus-wc-chip aria-label="Chip example" label="Chip" show-remove="true" size="md" variant="filled">
+            <modus-wc-avatar
+              img-src="https://i.pinimg.com/474x/73/54/79/7354794bf3873c3ef2666f778da4bcac.jpg"
+              alt="sonic the hedgehog"></modus-wc-avatar>
+          </modus-wc-chip>
+
+          <br /><br />
+
+          <modus-wc-chip aria-label="Chip example" label="Chip" show-remove="true" size="md" variant="filled">
+            <modus-wc-icon name="check" size="xs"></modus-wc-icon>
+          </modus-wc-chip>
+
+          <hr class="my-5 opacity-25" />
+
+          <h3 id="datepicker">Datepicker</h3>
+
+          <modus-wc-date aria-label="Date input" bordered="" custom-class="" label="Label" size="md"></modus-wc-date>
+
+          <hr class="my-5 opacity-25" />
+
+          <h3 class="d-none">File Dropzone</h3>
+
+          <hr class="my-5 opacity-25" />
+
+          <h3 id="icons">Icons</h3>
+
+          <modus-wc-icon aria-label="Alert icon" custom-class="" name="alert" size="md"> </modus-wc-icon>
+
+          <hr class="my-5 opacity-25" />
+
+          <h3 id="menu">Menu</h3>
+
+          <modus-wc-menu aria-label="Menu" orientation="vertical" size="md">
+            <modus-wc-menu-item label="Small" value="1" size="sm"></modus-wc-menu-item>
+            <modus-wc-menu-item label="Medium" value="2"></modus-wc-menu-item>
+            <modus-wc-menu-item label="Large" value="3" size="lg"></modus-wc-menu-item>
+            <modus-wc-menu-item label="Bordered" value="3" bordered="true"></modus-wc-menu-item>
+            <modus-wc-menu-item label="With Sub-label" value="3" sub-label="Sub-label"></modus-wc-menu-item>
+            <modus-wc-menu-item label="Selected" value="3" selected="true"></modus-wc-menu-item>
+            <modus-wc-menu-item label="With Start Icon" value="3" start-icon="info"></modus-wc-menu-item>
+            <modus-wc-menu-item label="Disabled" value="3" disabled="true"></modus-wc-menu-item>
+          </modus-wc-menu>
+
+          <hr class="my-5 opacity-25" />
+          <h3 id="modal">Modal</h3>
+
+          <modus-wc-button onclick="my_modal_1fix.showModal()"> Open modal </modus-wc-button>
+          <modus-wc-modal
+            aria-label="Example modal"
+            custom-class=""
+            fullscreen="false"
+            modal-id="my_modal_1fix"
+            backdrop="default"
+            position="center"
+            show-close="true"
+            show-fullscreen-toggle="false">
+            <span slot="header">Modal Title</span>
+            <span slot="content">This is sample modal content.</span>
+            <modus-wc-button slot="footer" onclick="my_modal_1fix.close()">
+              Close
+            </modus-wc-button>
+          </modus-wc-modal>
+
+          <script>
+            document.querySelector("#btn-modal").addEventListener("buttonClick", () => {
+              document.querySelector("modus-modal").open();
+            });
+          </script>
+
+          <hr class="my-5 opacity-25" />
+
+          <h3 id="navbar">Navbar</h3>
+
+          <style>
+            div[id^="story--components-navbar--default"] {
+              height: 360px;
+            }
+          </style>
+          <modus-wc-navbar search-debounce-ms="300">
+            <div slot="main-menu">Main menu contents</div>
+            <div slot="notifications">Notification contents</div>
+            <div slot="apps">App drawer contents</div>
+          </modus-wc-navbar>
+
+          <br />
+
+          <hr class="my-5 opacity-25" />
+
+          <h3 id="pagination">Pagination</h3>
+
+          <modus-wc-pagination count="5" custom-class="" page="1" size="md"></modus-wc-pagination>
+
+          <hr class="my-5 opacity-25" />
+
+          <h3 id="progress-bar">Progress Bar</h3>
+
+          <modus-wc-progress aria-label="Progress bar" max="100" value="70" variant="default"></modus-wc-progress>
+
+          <hr class="my-5 opacity-25" />
+
+          <h3 id="radio-group">Radio Group</h3>
+
+          <modus-wc-radio aria-label="Radio" custom-class="" label="Label" name="" size="md"></modus-wc-radio>
+          <modus-wc-radio
+            aria-label="Radio"
+            custom-class="mt-1"
+            value="false"
+            label="Label"
+            name=""
+            size="md"></modus-wc-radio>
+
+          <hr class="my-5 opacity-25" />
+
+          <h3 id="radio-group">Rating</h3>
+
+          <modus-wc-rating
+            aria-label="Rating scale component"
+            allow-half="false"
+            count="5"
+            custom-class=""
+            disabled="false"
+            size="md"
+            value="0"
+            variant="smiley"></modus-wc-rating>
+
+          <hr class="my-5 opacity-25" />
+
+          <h3 id="select">Select</h3>
+
+          <modus-wc-select aria-label="Select input" bordered="" label="Label" size="md"></modus-wc-select>
+          <script>
+            const modusSelect = document.querySelector("modus-wc-select");
+            modusSelect.options = [{ display: "Option 1" }, { display: "Option 2" }, { display: "Option 3" }];
+          </script>
+
+          <hr class="my-5 opacity-25" />
+
+          <h3 id="sentiment-scale" class="d-none">Sentiment Scale</h3>
+
+          <h3 id="sliders">Slider</h3>
+
+          <modus-wc-slider aria-label="Slider" custom-class="" label="Label" name="" size="md"></modus-wc-slider>
+
+          <hr class="my-5 opacity-25" />
+
+          <h3 id="spinners">Spinners</h3>
+
+          <modus-wc-loader
+            aria-label="Loading spinner"
+            color="primary"
+            custom-class=""
+            size="md"
+            variant="spinner"></modus-wc-loader>
+
+          <hr class="my-5 opacity-25" />
+
+          <h3 id="switch">Switch</h3>
+
+          <modus-wc-toggle aria-label="Toggle" custom-class="" label="Label" name="" size="md"></modus-wc-toggle>
+
+          <hr class="my-5 opacity-25" />
+
+          <hr class="my-5 opacity-25" />
+
+          <h3 id="tabs">Tabs</h3>
+
+          <modus-wc-tabs aria-label="Tab group" tab-style="bordered" size="md"></modus-wc-tabs>
+
+          <script>
+            const modusTabs = document.querySelector("modus-wc-tabs");
+            modusTabs.tabs = [
+              {
+                id: 0,
+                label: "Tab 1",
+              },
+              {
+                active: true,
+                id: 1,
+                label: "Tab 2",
+              },
+            ];
+          </script>
+
+          <hr class="my-5 opacity-25" />
+
+          <h3 id="text-inputs">Text Inputs</h3>
+
+          <modus-wc-text-input
+            bordered=""
+            include-clear="false"
+            label="Label Text"
+            size="md"
+            spellcheck="false"
+            type="text"></modus-wc-text-input>
+          <br />
+
+          <modus-wc-text-input
+            bordered=""
+            label="Label Search"
+            size="md"
+            spellcheck="false"
+            type="search"></modus-wc-text-input>
+          <br />
+          <modus-wc-text-input bordered="" label="Label Tel" size="md" type="tel"></modus-wc-text-input>
+
+          <hr class="my-5 opacity-25" />
+
+          <h3 id="textarea">Textarea</h3>
+
+          <modus-wc-textarea
+            aria-label="Textarea input"
+            bordered=""
+            custom-class=""
+            label="Label"
+            size="md"
+            spellcheck="false"></modus-wc-textarea>
+
+          <hr class="my-5 opacity-25" />
+
+          <h3 id="time-picker">Time Picker</h3>
+
+          <modus-wc-time-input label="Label" size="md"></modus-wc-time-input>
+
+          <hr class="my-5 opacity-25" />
+
+          <h3 id="toast">Toast</h3>
+
+          <div style="height: 200px">
+            <modus-wc-toast position="top-end">
+              <modus-wc-alert alert-title="Message sent successfully!" variant="success"></modus-wc-alert>
+            </modus-wc-toast>
+          </div>
+
+          <hr class="my-5 opacity-25" />
+
+          <h3 id="toolbar">Toolbar</h3>
+
+          <div>
+            <modus-wc-toolbar>
+              <div slot="start">Start</div>
+              <div slot="center">Center</div>
+              <div slot="end">End</div>
+            </modus-wc-toolbar>
+          </div>
+
+          <hr class="my-5 opacity-25" />
+
+          <h3 id="tooltips">Tooltip</h3>
+
+          <modus-wc-tooltip content="Tooltip content" position="auto">
+            <modus-wc-badge>Hover</modus-wc-badge>
+          </modus-wc-tooltip>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

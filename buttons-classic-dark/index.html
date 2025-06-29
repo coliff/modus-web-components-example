@@ -1,0 +1,338 @@
+<!doctype html><html lang="en" class="bg-dark" data-theme="modus-classic-dark" data-mode="dark" data-bs-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Buttons - Classic Dark</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2280%22>🔎</text></svg>">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@trimble-oss/modus-bootstrap@2.0.12/dist/css/modus-bootstrap.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@trimble-oss/modus-icons@1.16.0/dist/modus-solid/fonts/modus-icons.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@trimble-oss/moduswebcomponents@0.0.0-alpha.32/modus-wc-styles.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=fallback">
+<script src="https://cdn.jsdelivr.net/npm/@trimble-oss/moduswebcomponents@0.0.0-alpha.32/esm/modus-wc.js" type="module" fetchpriority="high"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/popover-css-inspector@1.0.0-beta16/js/popover-css-inspector.min.js" defer></script>
+<style>table tr,table td{min-height:90px}body{margin-left:auto;margin-right:auto}table{min-height:200px}.navbar-main a{text-decoration:none !important}</style>
+</head>
+<body class="bg-dark"><nav class="navbar navbar-expand-lg navbar-main bg-secondary bg-opacity-75 sticky-top fixed-top mb-5" style="backdrop-filter:blur(10px)" id="nav">
+<div class="container">
+<a class="navbar-brand text-decoration-none" href="/modus-compare/">Modus Compare <small class="opacity-50 text-muted small fs-6"></small></a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownContent" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+Content
+</a>
+<ul class="dropdown-menu" aria-labelledby="navbarDropdownContent">
+<li><a class="dropdown-item small" href="#typography">Typography</a></li>
+<li><a class="dropdown-item small" href="#images">Images</a></li>
+<li><a class="dropdown-item small" href="#tables">Tables</a></li>
+<li><a class="dropdown-item small" href="#figures">Figures</a></li>
+</ul>
+</li>
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#components" id="navbarDropdownComponents" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+Components
+</a>
+<ul class="dropdown-menu" aria-labelledby="navbarDropdownComponents">
+<li><a class="dropdown-item small" href="/modus-compare/accordion-classic-light/">Accordion</a></li>
+<li><a class="dropdown-item small" href="/modus-compare/alerts-classic-light/">Alerts</a></li>
+<li><a class="dropdown-item small" href="/modus-compare/badges-classic-light/">Badges</a></li>
+<li><a class="dropdown-item small" href="/modus-compare/buttons-classic-light/">Buttons</a></li>
+<li><a class="dropdown-item small" href="/modus-compare/cards-classic-light/">Cards</a></li>
+<li><a class="dropdown-item small" href="/modus-compare/dropdowns-classic-light/">Dropdowns</a></li>
+<li><a class="dropdown-item small" href="/modus-compare/forms-classic-light/">Forms</a></li>
+<li><a class="dropdown-item small" href="/modus-compare/modals-classic-light/">Modals</a></li>
+<li><a class="dropdown-item small" href="/modus-compare/navs-classic-light/">Navs</a></li>
+<li><a class="dropdown-item small" href="/modus-compare/pagination-classic-light/">Pagination</a></li>
+<li><a class="dropdown-item small" href="/modus-compare/progress-classic-light/">Progress</a></li>
+<li><a class="dropdown-item small" href="/modus-compare/spinners-classic-light/">Spinners</a></li>
+<li><a class="dropdown-item small" href="/modus-compare/tables-classic-light/">Tables</a></li>
+</ul>
+</li>
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#forms" id="navbarDropdownForms" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+Forms
+</a>
+<ul class="dropdown-menu" aria-labelledby="navbarDropdownForms">
+<li><a class="dropdown-item small" href="#checks">Checks & Radios</a></li>
+<li><a class="dropdown-item small" href="#switches">Switches</a></li>
+<li><a class="dropdown-item small" href="#select">Select</a></li>
+</ul>
+</li>
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#kitchen-sink" id="navbarDropdownKitchenSink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+Kitchen Sink
+</a>
+<ul class="dropdown-menu" aria-labelledby="navbarDropdownKitchenSink">
+<li><a class="dropdown-item" href="/v1/">Modus Web Components v1</a></li>
+<li><a class="dropdown-item" href="/v2/">Modus Web Components v2</a></li>
+</ul>
+</li>
+<li class="nav-item dropdown">
+<a class="nav-link" href="https://github.com/coliff/modus-compare/">GitHub</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+<main class="mb-5 p-4 container-xxl">
+<h2 id="buttons" class="h1 fw-bold mt-5">Buttons</h2>
+<table class="w-100 table table-bordered mt-3">
+<tr>
+<td class="w-50"><div class="d-flex flex-row gap-3 my-5 py-5">
+<button type="button" class="btn btn-primary" data-bs-toggle="popover" data-bs-custom-class="popover-css-inspector" data-bs-content="This is a popover">Primary
+</button>
+</div>
+</td>
+<td class="w-50"><div class="d-flex flex-row gap-3 my-5 py-5">
+<modus-wc-button color="primary" shape="rectangle" size="md" type="button" variant="filled">Primary
+</modus-wc-button>
+</div>
+</td>
+</tr>
+<tr>
+<td class="w-50"><div class="d-flex flex-row gap-3 my-5 py-5">
+<button type="button" class="btn btn-secondary" data-bs-toggle="popover" data-bs-custom-class="popover-css-inspector" data-bs-content="This is a popover">Secondary
+</button>
+</div>
+</td>
+<td class="w-50"><div class="d-flex flex-row gap-3 my-5 py-5">
+<modus-wc-button color="secondary" shape="rectangle" size="md" type="button" variant="filled">Secondary
+</modus-wc-button>
+</div>
+</td>
+</tr>
+<tr>
+<td class="w-50"><div class="d-flex flex-row gap-3 my-5 py-5">
+<button type="button" class="btn btn-tertiary" data-bs-toggle="popover" data-bs-custom-class="popover-css-inspector" data-bs-content="This is a popover">Tertiary
+</button>
+</div>
+</td>
+<td class="w-50"><div class="d-flex flex-row gap-3 my-5 py-5">
+<modus-wc-button color="tertiary" shape="rectangle" size="md" type="button" variant="filled">Tertiary
+</modus-wc-button>
+</div>
+</td>
+</tr>
+<tr>
+<td class="w-50"><div class="d-flex flex-row gap-3 my-5 py-5">
+<button type="button" class="btn btn-danger" data-bs-toggle="popover" data-bs-custom-class="popover-css-inspector" data-bs-content="This is a popover">Danger
+</button>
+</div>
+</td>
+<td class="w-50"><div class="d-flex flex-row gap-3 my-5 py-5">
+<modus-wc-button color="danger" shape="rectangle" size="md" type="button" variant="filled">Danger
+</modus-wc-button>
+</div>
+</td>
+</tr>
+<tr>
+<td class="w-50"><div class="d-flex flex-row gap-3 my-5 py-5">
+<button type="button" class="btn btn-warning" data-bs-toggle="popover" data-bs-custom-class="popover-css-inspector" data-bs-content="This is a popover">Warning
+</button>
+</div>
+</td>
+<td class="w-50"><div class="d-flex flex-row gap-3 my-5 py-5">
+<modus-wc-button color="warning" shape="rectangle" size="md" type="button" variant="filled">Warning
+</modus-wc-button>
+</div>
+</td>
+</tr>
+</table>
+<h2 id="buttons" class="h1 fw-bold mt-5">Buttons (Disabled)</h2>
+<table class="w-100 table table-bordered mt-3">
+<tr>
+<td class="w-50"><div class="d-flex flex-row gap-3 my-5 py-5">
+<button type="button" class="btn btn-primary" data-bs-toggle="popover" data-bs-custom-class="popover-css-inspector" data-bs-content="This is a popover" disabled>Primary
+</button>
+</div>
+</td>
+<td class="w-50"><div class="d-flex flex-row gap-3 my-5 py-5">
+<modus-wc-button color="primary" shape="rectangle" size="md" type="button" variant="filled" disabled>Primary
+</modus-wc-button>
+</div>
+</td>
+</tr>
+<tr>
+<td class="w-50"><div class="d-flex flex-row gap-3 my-5 py-5">
+<button type="button" class="btn btn-secondary" data-bs-toggle="popover" data-bs-custom-class="popover-css-inspector" data-bs-content="This is a popover" disabled>Secondary
+</button>
+</div>
+</td>
+<td class="w-50"><div class="d-flex flex-row gap-3 my-5 py-5">
+<modus-wc-button color="secondary" shape="rectangle" size="md" type="button" variant="filled" disabled>Secondary
+</modus-wc-button>
+</div>
+</td>
+</tr>
+<tr>
+<td class="w-50"><div class="d-flex flex-row gap-3 my-5 py-5">
+<button type="button" class="btn btn-tertiary" data-bs-toggle="popover" data-bs-custom-class="popover-css-inspector" data-bs-content="This is a popover" disabled>Tertiary
+</button>
+</div>
+</td>
+<td class="w-50"><div class="d-flex flex-row gap-3 my-5 py-5">
+<modus-wc-button color="tertiary" shape="rectangle" size="md" type="button" variant="filled" disabled>Tertiary
+</modus-wc-button>
+</div>
+</td>
+</tr>
+<tr>
+<td class="w-50"><div class="d-flex flex-row gap-3 my-5 py-5">
+<button type="button" class="btn btn-danger" data-bs-toggle="popover" data-bs-custom-class="popover-css-inspector" data-bs-content="This is a popover" disabled>Danger
+</button>
+</div>
+</td>
+<td class="w-50"><div class="d-flex flex-row gap-3 my-5 py-5">
+<modus-wc-button color="danger" shape="rectangle" size="md" type="button" variant="filled" disabled>Danger
+</modus-wc-button>
+</div>
+</td>
+</tr>
+<tr>
+<td class="w-50"><div class="d-flex flex-row gap-3 my-5 py-5">
+<button type="button" class="btn btn-warning" data-bs-toggle="popover" data-bs-custom-class="popover-css-inspector" data-bs-content="This is a popover" disabled>Warning
+</button>
+</div>
+</td>
+<td class="w-50"><div class="d-flex flex-row gap-3 my-5 py-5">
+<modus-wc-button color="warning" shape="rectangle" size="md" type="button" variant="filled" disabled>Warning
+</modus-wc-button>
+</div>
+</td>
+</tr>
+</table>
+<h2 id="buttons" class="h1 fw-bold mt-5">Buttons (Outline)</h2>
+<table class="w-100 table table-bordered mt-3">
+<tr>
+<td class="w-50"><div class="d-flex flex-row gap-3 my-5 py-5">
+<button type="button" class="btn btn-outline-primary" data-bs-toggle="popover" data-bs-custom-class="popover-css-inspector" data-bs-content="This is a popover">Primary
+</button>
+</div>
+</td>
+<td class="w-50"><div class="d-flex flex-row gap-3 my-5 py-5">
+<modus-wc-button color="primary" shape="rectangle" size="md" type="button" variant="outlined">Primary
+</modus-wc-button>
+</div>
+</td>
+</tr>
+<tr>
+<td class="w-50"><div class="d-flex flex-row gap-3 my-5 py-5">
+<button type="button" class="btn btn-outline-secondary" data-bs-toggle="popover" data-bs-custom-class="popover-css-inspector" data-bs-content="This is a popover">Secondary
+</button>
+</div>
+</td>
+<td class="w-50"><div class="d-flex flex-row gap-3 my-5 py-5">
+<modus-wc-button color="secondary" shape="rectangle" size="md" type="button" variant="outlined">Secondary
+</modus-wc-button>
+</div>
+</td>
+</tr>
+<tr>
+<td class="w-50"><div class="d-flex flex-row gap-3 my-5 py-5">
+<button type="button" class="btn btn-outline-tertiary" data-bs-toggle="popover" data-bs-custom-class="popover-css-inspector" data-bs-content="This is a popover">Tertiary
+</button>
+</div>
+</td>
+<td class="w-50"><div class="d-flex flex-row gap-3 my-5 py-5">
+<modus-wc-button color="tertiary" shape="rectangle" size="md" type="button" variant="outlined">Tertiary
+</modus-wc-button>
+</div>
+</td>
+</tr>
+<tr>
+<td class="w-50"><div class="d-flex flex-row gap-3 my-5 py-5">
+<button type="button" class="btn btn-outline-danger" data-bs-toggle="popover" data-bs-custom-class="popover-css-inspector" data-bs-content="This is a popover">Danger
+</button>
+</div>
+</td>
+<td class="w-50"><div class="d-flex flex-row gap-3 my-5 py-5">
+<modus-wc-button color="danger" shape="rectangle" size="md" type="button" variant="outlined">Danger
+</modus-wc-button>
+</div>
+</td>
+</tr>
+<tr>
+<td class="w-50"><div class="d-flex flex-row gap-3 my-5 py-5">
+<button type="button" class="btn btn-outline-warning" data-bs-toggle="popover" data-bs-custom-class="popover-css-inspector" data-bs-content="This is a popover">Warning
+</button>
+</div>
+</td>
+<td class="w-50"><div class="d-flex flex-row gap-3 my-5 py-5">
+<modus-wc-button color="warning" shape="rectangle" size="md" type="button" variant="outlined">Warning
+</modus-wc-button>
+</div>
+</td>
+</tr>
+</table>
+<h2 id="buttons" class="h1 fw-bold mt-5">Buttons (Outline) Disabled</h2>
+<table class="w-100 table table-bordered mt-3">
+<tr>
+<td class="w-50"><div class="d-flex flex-row gap-3 my-5 py-5">
+<button type="button" class="btn btn-outline-primary" data-bs-toggle="popover" data-bs-custom-class="popover-css-inspector" data-bs-content="This is a popover" disabled>Primary
+</button>
+</div>
+</td>
+<td class="w-50"><div class="d-flex flex-row gap-3 my-5 py-5">
+<modus-wc-button color="primary" shape="rectangle" size="md" type="button" variant="outlined" disabled>Primary
+</modus-wc-button>
+</div>
+</td>
+</tr>
+<tr>
+<td class="w-50"><div class="d-flex flex-row gap-3 my-5 py-5">
+<button type="button" class="btn btn-outline-secondary" data-bs-toggle="popover" data-bs-custom-class="popover-css-inspector" data-bs-content="This is a popover" disabled>Secondary
+</button>
+</div>
+</td>
+<td class="w-50"><div class="d-flex flex-row gap-3 my-5 py-5">
+<modus-wc-button color="secondary" shape="rectangle" size="md" type="button" variant="outlined" disabled>Secondary
+</modus-wc-button>
+</div>
+</td>
+</tr>
+<tr>
+<td class="w-50"><div class="d-flex flex-row gap-3 my-5 py-5">
+<button type="button" class="btn btn-outline-tertiary" data-bs-toggle="popover" data-bs-custom-class="popover-css-inspector" data-bs-content="This is a popover" disabled>Tertiary
+</button>
+</div>
+</td>
+<td class="w-50"><div class="d-flex flex-row gap-3 my-5 py-5">
+<modus-wc-button color="tertiary" shape="rectangle" size="md" type="button" variant="outlined" disabled>Tertiary
+</modus-wc-button>
+</div>
+</td>
+</tr>
+<tr>
+<td class="w-50"><div class="d-flex flex-row gap-3 my-5 py-5">
+<button type="button" class="btn btn-outline-danger" data-bs-toggle="popover" data-bs-custom-class="popover-css-inspector" data-bs-content="This is a popover" disabled>Danger
+</button>
+</div>
+</td>
+<td class="w-50"><div class="d-flex flex-row gap-3 my-5 py-5">
+<modus-wc-button color="danger" shape="rectangle" size="md" type="button" variant="outlined" disabled>Danger
+</modus-wc-button>
+</div>
+</td>
+</tr>
+<tr>
+<td class="w-50"><div class="d-flex flex-row gap-3 my-5 py-5">
+<button type="button" class="btn btn-outline-warning" data-bs-toggle="popover" data-bs-custom-class="popover-css-inspector" data-bs-content="This is a popover" disabled>Warning
+</button>
+</div>
+</td>
+<td class="w-50"><div class="d-flex flex-row gap-3 my-5 py-5">
+<modus-wc-button color="warning" shape="rectangle" size="md" type="button" variant="outlined" disabled>Warning
+</modus-wc-button>
+</div>
+</td>
+</tr>
+</table>
+</main><script src="/js/popover.js" defer fetchpriority="low"></script>
+</body>
+</html>
