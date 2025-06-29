@@ -75,6 +75,31 @@
       <td class="w-50">{{- partial "button-wc2" (dict "context" . "type" "warning" "label" "Warning" "variant" "outlined") -}}</td>
     </tr>
   </table>
+
+     <h2 id="buttons" class="h1 fw-bold mt-5">Buttons (Outline) Disabled</h2>
+
+  <table class="w-100 table table-bordered mt-3">
+    <tr>
+      <td class="w-50">{{- partial "button-mb2" (dict "context" . "type" "primary" "label" "Primary" "variant" "outline-" "disabled" "disabled") -}}</td>
+      <td class="w-50">{{- partial "button-wc2" (dict "context" . "type" "primary" "label" "Primary" "variant" "outlined" "disabled" "disabled") -}}</td>
+    </tr>
+     <tr>
+      <td class="w-50">{{- partial "button-mb2" (dict "context" . "type" "secondary" "label" "Secondary" "variant" "outline-" "disabled" "disabled") -}}</td>
+      <td class="w-50">{{- partial "button-wc2" (dict "context" . "type" "secondary" "label" "Secondary" "variant" "outlined" "disabled" "disabled") -}}</td>
+    </tr>
+    <tr>
+      <td class="w-50">{{- partial "button-mb2" (dict "context" . "type" "tertiary" "label" "Tertiary" "variant" "outline-" "disabled" "disabled") -}}</td>
+      <td class="w-50">{{- partial "button-wc2" (dict "context" . "type" "tertiary" "label" "Tertiary" "variant" "outlined" "disabled" "disabled") -}}</td>
+    </tr>
+     <tr>
+      <td class="w-50">{{- partial "button-mb2" (dict "context" . "type" "danger" "label" "Danger" "variant" "outline-" "disabled" "disabled") -}}</td>
+      <td class="w-50">{{- partial "button-wc2" (dict "context" . "type" "danger" "label" "Danger" "variant" "outlined" "disabled" "disabled") -}}</td>
+    </tr>
+    <tr>
+      <td class="w-50">{{- partial "button-mb2" (dict "context" . "type" "warning" "label" "Warning" "variant" "outline-" "disabled" "disabled") -}}</td>
+      <td class="w-50">{{- partial "button-wc2" (dict "context" . "type" "warning" "label" "Warning" "variant" "outlined" "disabled" "disabled") -}}</td>
+    </tr>
+  </table>
 </main>
 
 {{- end -}}
