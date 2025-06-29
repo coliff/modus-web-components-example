@@ -1,6 +1,7 @@
 ---
 title: "Modus Compare"
 description: ""
+html_class: "bg-white"
 body_class: "gap-3 bg-white"
 data_bs_theme: "light"
 ---
